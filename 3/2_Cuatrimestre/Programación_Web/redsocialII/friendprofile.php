@@ -22,8 +22,8 @@
 				<div>
 					<a href="myprofile.php?n=0">
 						<?php 
-							$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-    						mysqli_select_db($conexion, "pw_77148079");
+							$conexion = mysqli_connect("localhost", "*********", "*********");
+    						mysqli_select_db($conexion, "*********");
     						$tildes=$conexion->query("SET NAMES 'utf8'");
     						session_start();
 							$usuario=$_SESSION['usuario'];
@@ -73,8 +73,8 @@
 				<ul>
 					<li id="tituloMenuAmigos"><label for="menuAmigos">Mis Amigos</label></li>
 					<?php 
-						$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-						mysqli_select_db($conexion, "pw_77148079");
+						$conexion = mysqli_connect("localhost", "*********", "*********");
+						mysqli_select_db($conexion, "*********");
 						$tildes=$conexion->query("SET NAMES 'utf8'");
 						$usuario=$_SESSION['usuario'];
 						$result=mysqli_query($conexion, "select nombreUsuario, imagen, hayImagen from usuarios");
@@ -110,8 +110,8 @@
 						<p>Usuarios Activos</p>
 					</li>
 					<?php 
-						$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-						mysqli_select_db($conexion, "pw_77148079");
+						$conexion = mysqli_connect("localhost", "*********", "*********");
+						mysqli_select_db($conexion, "*********");
 						$tildes=$conexion->query("SET NAMES 'utf8'");
 						$usuario=$_SESSION['usuario'];
 						$result=mysqli_query($conexion, "select nombreUsuario, imagen, hayImagen, conectado from usuarios");
@@ -137,8 +137,8 @@
 		</aside>
 		<section id="historias">
 		<?php 
-				$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-				mysqli_select_db($conexion, "pw_77148079");
+				$conexion = mysqli_connect("localhost", "*********", "*********");
+				mysqli_select_db($conexion, "*********");
 				$tildes=$conexion->query("SET NAMES 'utf8'");
 				$amigo=$_GET["perfil"];
 				$result=mysqli_query($conexion, "select entradas.*, usuarios.imagen, usuarios.hayImagen from entradas, usuarios where usuario='".$amigo."' and usuarios.nombreUsuario=entradas.usuario order by entradas.id desc;");

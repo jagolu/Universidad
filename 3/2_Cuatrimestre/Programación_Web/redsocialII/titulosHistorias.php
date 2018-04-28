@@ -4,8 +4,8 @@
 	</head>
 	<body>
 		<?php
-			$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-			mysqli_select_db($conexion, "pw_77148079");
+			$conexion = mysqli_connect("localhost", "*********", "*********");
+			mysqli_select_db($conexion, "*********");
 			$tildes=$conexion->query("SET NAMES 'utf8'");
 			$user=$_GET["user"];
 			$result=mysqli_query($conexion, "select titulo, id from entradas where usuario='".$user."'");

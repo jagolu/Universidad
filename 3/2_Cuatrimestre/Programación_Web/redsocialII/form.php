@@ -3,9 +3,9 @@
 //-----------------CONECTAR A BASE DE DATOS--------------------------
 
     function conectar(){
-        $conexion= mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-        $conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-        mysqli_select_db($conexion, "pw_77148079");
+        $conexion= mysqli_connect("localhost", "**********", "*********");
+        $conexion = mysqli_connect("localhost", "*********", "***********");
+        mysqli_select_db($conexion, "**********");
         $tildes=$conexion->query("SET NAMES 'utf8'");
         return $conexion;
     }

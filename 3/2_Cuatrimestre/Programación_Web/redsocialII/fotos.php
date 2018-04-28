@@ -22,8 +22,8 @@
 				<div>
 					<a href="myprofile.php?n=0">
 						<?php 
-							$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-    						mysqli_select_db($conexion, "pw_77148079");
+							$conexion = mysqli_connect("localhost", "*********", "*********");
+    						mysqli_select_db($conexion, "*********");
     						$tildes=$conexion->query("SET NAMES 'utf8'");
     						session_start();
 							$usuario=$_SESSION['usuario'];
@@ -96,8 +96,8 @@
 				<ul>
 					<li id="tituloMenuAmigos"><label for="menuAmigos">Mis Amigos</label></li>
 					<?php 
-						$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-						mysqli_select_db($conexion, "pw_77148079");
+						$conexion = mysqli_connect("localhost", "*********", "*********");
+						mysqli_select_db($conexion, "*********");
 						$tildes=$conexion->query("SET NAMES 'utf8'");
 						$usuario=$_SESSION['usuario'];
 						$result=mysqli_query($conexion, "select nombreUsuario, imagen, hayImagen from usuarios");
@@ -133,8 +133,8 @@
 						<p>Usuarios Activos</p>
 					</li>
 					<?php 
-						$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-						mysqli_select_db($conexion, "pw_77148079");
+						$conexion = mysqli_connect("localhost", "*********", "*********");
+						mysqli_select_db($conexion, "*********");
 						$tildes=$conexion->query("SET NAMES 'utf8'");
 						$usuario=$_SESSION['usuario'];
 						$result=mysqli_query($conexion, "select nombreUsuario, imagen, hayImagen, conectado from usuarios");
@@ -160,8 +160,8 @@
 		</aside>
 		<section id="misFotos">
 			<?php
-				$conexion = mysqli_connect("localhost", "pw_77148079", "Xpw_77148079");
-				mysqli_select_db($conexion, "pw_77148079");
+				$conexion = mysqli_connect("localhost", "*********", "*********");
+				mysqli_select_db($conexion, "*********");
 				$tildes=$conexion->query("SET NAMES 'utf8'");
 				$user=$_GET['perfil'];
 				$result=mysqli_query($conexion, "select imagenEntrada, id from entradas where hayImagenEntrada='1' and usuario='".$user."' order by id desc");
