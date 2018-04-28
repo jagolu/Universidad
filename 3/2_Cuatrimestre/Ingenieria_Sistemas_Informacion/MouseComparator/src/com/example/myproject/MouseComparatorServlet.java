@@ -26,10 +26,10 @@ import org.xml.sax.SAXException;
 
 @SuppressWarnings("serial")
 public class MouseComparatorServlet extends HttpServlet {
-	private static final String AWS_ACCESS_KEY_ID="AKIAIQRYEFW2QJ6ZKKMQ";
-	private static final String AWS_SECRET_KEY="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";
+	private static final String AWS_ACCESS_KEY_ID="*********************";
+	private static final String AWS_SECRET_KEY="***************************";
 	private static final String ENDPOINT="ecs.amazonaws.com";
-	private static final String AMAZON_ASSOCIATE_TAG="mipro-20";
+	private static final String AMAZON_ASSOCIATE_TAG="****";
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		String modelo=req.getParameter("modelo");
 		MouseComparator bc=new MouseComparator();
