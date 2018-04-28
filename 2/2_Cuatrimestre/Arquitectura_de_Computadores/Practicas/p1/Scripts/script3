@@ -1,0 +1,6 @@
+#!/bin/bash
+for ((N=65536;N<=67108864;N=N*2))
+do
+	echo $N
+   time ./$1 $N
+done
