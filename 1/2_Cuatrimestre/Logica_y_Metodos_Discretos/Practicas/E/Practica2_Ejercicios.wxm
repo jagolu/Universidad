@@ -1,0 +1,112 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+load("C:/Users/Usuario-PC/Dropbox/UGR/1 Año/2 Cuatrimestre/LMD/Practicas/relaciones.mac")$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+(1) Implementar una funcion "product order(x,y)" que, dadas dos listas x e y (de la misma longitud) 
+de numeros naturales, las compare segun el orden producto.  
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+product_order(x,y):=block([R1],
+R1:cartesian_product(x,y),
+print(El_producto_cartesiano_es ),
+print(cartesian_product(x,y)),
+print(universo= universo(R1)),
+print(Reflexiva ),
+print(es_reflexiva(R1)),
+print(Simetrica ),
+print(es_simetrica(R1)),
+print(Antisimetrica ),
+print(es_antisimetrica(R1)),
+print(Transitiva ),
+print(es_transitiva(R1)),
+print(esta_conectada ),
+print(es_conectada(R1)),
+print(Por_lo_tanto ),
+print(Relacion_equivalencia ),
+print(es_equivalencia(R1)),
+print(Relacion_orden ),
+print(es_orden(R1)),
+print(el_minimo ),
+print(minimo(R1)),
+print(el_maximo ),
+print(maximo(R1)),
+print(los_minimales ),
+print(minimales(R1)),
+print(los_maximales ),
+print(maximales(R1)),
+print(los_minorantes ),
+print(minorantes(R1)),
+print(los_mayorantes ),
+print(mayorantes(R1)),
+print(el_infimo ),
+print(infimo(R1)),
+print(El_supremo ),
+print(supremo(R1)),
+print(Es_reticulo ),
+print(es_Ret(R1)),
+print(Su_diagrama_de_Hasse ),
+Hasse(R1))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+X:{1,2,3,4};
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Y:{5,6,7,8};
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+product_order(X,Y);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+(2) Implementar una funcion "boole(n)" que, dado un numero nattural n, devuelva true si D(n) es un Algebra de Boole.
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+boole(n):=block([A,B,F,D,i],
+B:complementados(n),
+D:divisors(n),
+F:ifactors(n),
+A:1,
+for i:1 thru cardinality(setify(F)) do if infimo(F[i])!=gcd(F[i][1],F[i][2]) then if supremo(F[i])!=lcm(F[i][1],F[i][2]) then A:0,
+if cardinality(B)=cardinality(D) then if A=0 then true else false else false)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+boole(2014);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+boole(12);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+(3) Implementar una funcion "no_boole_set(m,n)" que, dados dos numeros naturales m y n, devuelva el conjunto de los
+numeros naturales p entre n y m tales que D(p) NO es Algebra de Boole.
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+not_boole_set(m,n):=block([X,Y,Z],
+X:setify(makelist(i,i,m,n)),
+Y:subset(X,primep),
+Z:setdifference(X,Y),
+return(Z))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+not_boole_set(1,10);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+not_boole_set(1,50);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

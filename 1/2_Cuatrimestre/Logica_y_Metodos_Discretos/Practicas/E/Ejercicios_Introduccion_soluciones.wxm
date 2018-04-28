@@ -1,0 +1,80 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+diophantic(a,b,c):=block([d,p,S],
+d:gcd(a,b),
+p:gcdex(a,b),
+if mod(c,d)=0 then (S:[(c/d)*p[1]+(b/d)*k,(c/d)*p[2]-(a/d)*k],print("x=" ,S[1],", y=",S[2],"."))
+    else print("La ecuacion no tiene solucion.")
+)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+diophantic(121,-77,88);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+"Con salida en forma de lista";
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+diophantic(a,b,c):=block([d,p,S],
+d:gcd(a,b),
+p:gcdex(a,b),
+if mod(c,d)=0 then (S:[(c/d)*p[1]+(b/d)*k,(c/d)*p[2]-(a/d)*k])
+    else print ("La ecuacion no tiene solucion")
+)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+diophantic(40,15,30);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+congruence(a,b,m):=block([d,P,S],
+d:gcd(a,m),
+if mod(b,d)=0 then diophantic(a,m,b)[1]
+else print ("La ecuacion no tiene solucion")
+)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+congruence(54,6,34);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+(1) Implementar una funcion "diophantic" que tenga por entrada
+tres numeros enteros "a, b, c" y por salida las soluciones, en su caso, 
+de la ecuacion diofantica ax + by = c. 
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+diophantic(a,b,c):=block([A,B,C,i,l],
+if (mod(c,gcd(a,b))=0) then (
+a:a/gcd(a,b), b:b/gcd(a,b), c:c/gcd(a,b),
+A:a, B:b, C:c,
+a:mod(a,b), c:mod(c,b),
+l:gcdex(a,b),
+a:mod(a*l[1],b), c:mod(c*l[1],b),
+C:(C-(a*A))/B, B:(A*c)/B,
+print (X=a+(b*i),Y=C+(B*i))) else ("No tiene soluciones enteras"))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+(2) Implementar una función "congruence" que tenga por entrada tres 
+números enteros "a, b, m" y por salida las soluciones, en su caso,
+de la ecuación en congruencia ax = b mod m.
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+congruence(a,b,m):=block([l],
+a:mod(a,m), b:mod(b,m),
+a:a/gcd(a,m), b:b/gcd(a,m), m:m/gcd(a,m),
+l:gcdex(a,m),
+a:mod(a*l[1],m), b:mod(b*l[1],m),
+if (mod(b,gcd(a,m))=0) then print (X=b+m*i) else "No tiene soluciones enteras")$
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

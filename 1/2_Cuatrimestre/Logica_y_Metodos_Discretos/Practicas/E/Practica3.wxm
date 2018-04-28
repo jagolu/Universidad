@@ -1,0 +1,81 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: comment start ]
+Para la realización de estos ejercicios utilizare las funciones boole, atomos y coatomos.
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+boole(n):=block([fact,i],
+fact:ifactors(n),
+if is(apply("*",makelist(fact[i][2],i,1,length(fact)))=1) then true else false
+)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+atomos(n):=block(
+[fact,l],
+if boole(n)=true then
+(fact:ifactors(n),
+l:length(fact),
+setify(makelist(fact[i][1],i,1,l))) else print("D(",n,") no es Ã¡lgebra de Boole","")
+)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+coatomos(n):=block([la],
+la:listify(atomos(n)),
+setify(makelist(quotient(n,la[k]),k,1,length(la))))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+EJERCICIO 1. 
+Implementar una función "boolel(n,p)" que devuelva el menor entero positivo m >= n tal que D(m) es un álgebra de Boole 
+de p átomos.
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+boolel(n,p):=block([i,esta,numero],
+esta:0,
+for i:n while esta=0 do (if boole(i)=true then if cardinality(atomos(i))=p then (esta:1,numero:i) else esta:0 else esta:0),
+return(numero))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+boolel(2,3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+boolel(1,1);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+EJERCICIO 2.  
+Implementar una función "boolep(m,p)" tal que dados dos números naturales m y p devuelva una lista 
+[x,C] en la que x es el número de álgebras de Boole D(n) (con n <= m) con 2^p elementos y C el conjunto 
+de tales n. 
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+boolep(m,p):=block([x,C,A,B,L],
+p:2^p,
+cardinal(j):=block(
+if cardinality(divisors(j))=p then true else false),
+A:setify(makelist(i,i,1,m)),
+B:subset(A,boole),
+C:subset(B,cardinal),
+x:cardinality(C),
+L:[x,C],
+return(L))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+boolep(50,2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+boolep(10,2);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$
