@@ -1,0 +1,766 @@
+/*INDEX.HTML*/
+
+
+
+
+header{
+	display:block;
+	margin:-8px;
+	background-color:#00004d;
+	height:111px;
+}
+header section{
+	position:relative;
+	display:inline-block;
+	width: 33%;
+	height:100%;
+}
+header label{
+	color:white;
+}
+#headerLogo{
+	float:left;
+}
+#headerLogo img{
+	height: 85%;
+	margin-left:8%;
+}
+#headerForm{
+	float:right;
+}
+label{
+	display:block;
+}
+input{
+	display:block;
+}
+header form{
+	float:right;
+	padding-right:11%;
+}
+header h1{
+	font-size:240%;
+	font-family: cursive;
+	color:white;
+	display:block;
+	width:100%;
+	text-align:center;
+	margin:auto;
+	padding-top:5%;
+}
+#entrar{
+	position:absolute;
+	padding-right:3%;
+	bottom:6%;
+}
+#sectionImagenRS img{
+	width: 100%;
+	height: 100%;
+}
+#sectionImagenRS{
+	height: 70%;
+	width:45%;
+	float:left;
+	position:absolute;
+	top:19%;
+}
+#sectionFormRegistro{
+	float:right;
+	width:45%;
+	height:70%;
+	position:absolute;
+	top:19%;
+	left:54%;
+}
+#sectionFormRegistro form{
+	margin:0 auto;
+	width: 405px;
+	padding-top:2%;
+}
+#submitRegistro{
+	width:24%;
+	background-color: #85e085;
+}
+.registrarse{
+	width: 400px;
+	height: 30px;
+}
+#generos{
+	display:block;
+}
+#generos input{
+	display:inline-block;
+}
+#footerIndex{
+	width:98%;
+	height: 2%;
+	display:block;
+	position:absolute;
+	bottom:0;
+}
+footer p{
+	display:inline-block;
+	margin-top:2%;
+	margin-left:45%;
+}
+
+
+
+/*HEADERS*/
+
+
+
+#headerPerfil{
+	float:right;
+}
+#headerPerfil img{
+	height:55%;
+	padding:0;
+	display:block;
+	width: 15%;
+	float:right;
+	margin-top:14%;
+	margin-right:-14%;
+	border-radius:25%;
+}
+#miNombre{
+	width:25%;
+	display:block;
+	color:white;
+	float:right;
+	margin:0;
+	margin-right:24%;
+	margin-top:3%;
+}
+#headerPerfil div{
+	display:block;
+	width:50%;
+	float:right;
+}
+#logout{
+	width:40%;
+	display:block;
+	color:white;
+	float:right;
+	margin:0;
+	margin-top:34%;
+	margin-right: -38.5%;
+}
+
+
+
+/*TODOS LOS USUARIOS*/
+
+
+
+h3{
+	text-align: center;
+}
+#usuariosRedSocial input{
+	display:none;
+}
+#tituloMenuAmigos{
+	display:none !important;
+}
+#tituloMenuAmigos label{
+	display: none;
+}
+#usuariosRedSocial img{
+	width:60%;
+	margin-left:19%;
+	border-radius:24%;
+}
+#usuariosRedSocial{
+	display:inline-block;
+}
+#usuariosRedSocial p{
+	margin:0;
+	margin-left:30%;
+}
+#usuariosRedSocial li{
+	list-style: none;
+	margin-bottom:0.3%;
+	background-color:white;
+	width:8%;
+	display:inline-block;
+}
+#usuariosRedSocial ul{
+	overflow-y: scroll;
+	padding-left:0;
+	width:100%;
+	height: 172px;
+	overflow-x:hidden;
+	overflow-y:inherit;
+}
+
+
+
+/*USUARIOS ACTIVOS*/
+
+
+
+aside{
+	float:right;
+	width:10%;
+	margin-top:-1%;
+	margin-right:0;
+}
+#menuUsuariosActivos{
+	display:none;
+}
+#usuarioActivos{
+	text-align: center ;
+	margin-bottom:55%;
+}
+#usuarioActivos label{
+	display:none;
+}
+aside ul{
+	overflow-y:auto; 
+	padding:0;                                                                                                                         
+}
+aside img{
+	margin-left:10%;
+	width:30%;
+	border-radius:50%;
+}
+aside p{
+	float:right;
+	padding-top:6%;
+	margin:0;
+	margin-right:8%;
+}
+aside li{
+	list-style: none;
+	margin-top:3%;
+	background-color:white;
+	margin-left:2%;
+	margin-right:2%;
+}
+body{
+	background-color:#f2f2f2;
+}
+#asidePortadaYPerfil ul{
+	height: 624px
+}
+#asideHistoria ul{
+	height: 978px;
+}
+#asideBiografiaInformacion ul{
+	height: 575px;
+}
+#asideFotos ul{
+	height: 544px;
+}
+#asideMiPerfil ul{
+	height: 834px;
+}
+
+
+/*HISTORIAS PORTADA*/
+
+
+
+#historias{
+	width:90%;
+	margin:0;
+	margin-top:0.5%;
+}
+#historias article{
+	width:22%;
+	display:inline-block;
+	background-color:white;
+	margin-left:2%;
+	margin-bottom:2%;
+}
+#historias h2{
+	margin:2%;
+	margin-left:5%;
+}
+#historias img{
+	width:40%;
+	margin-left:5%;
+	border-radius:24%;
+}
+#historias p{
+	margin-right:8%;
+	margin-top:14%;
+	float:right;
+}
+#historias h4{
+	margin:0;
+	margin-top:4%;
+	margin-left:9%;
+}
+.contenidoHistoria{
+	margin:0;
+	margin-left:5%;
+	margin-right:5% !important;
+	margin-bottom:7%;
+	margin-top:5% !important;
+}
+#flechas{
+	width:90%;
+}
+#flechas img{
+	width:2%;
+	margin-left:31.4%;
+	margin-top:-2%;
+}
+
+
+
+/*CONTACTO*/
+
+
+
+#bodyContacto p{
+	text-align: center
+}
+
+
+
+/*ENTRADA*/
+
+
+
+#historia article{
+	margin-top:1%;
+	width: 60%;
+	margin-left:15%;
+	background-color:white;
+}
+#historia h1{
+	margin:0;
+	margin-top:0;
+	margin-left:7%;
+	padding-top:1%;
+	padding-bottom: 1%;
+}
+#fotoTiempo{
+	display:inline-block;
+}
+#fotoTiempo img{
+	width:25%;
+	border-radius: 25%;
+	margin-left:10%;
+}
+#fotoTiempo h2{
+	width: 50%;
+	text-align:center;
+	margin-top:7%;
+	margin-right:-57%;
+}
+#historia h2{
+	float:right;
+}
+#historia h3{
+	margin-left:-85%;
+}
+#imagenDescription{
+	display:inline-block;
+}
+#fotoDescripcion h4{
+	margin-top:2.7%;
+	margin-right:5%;
+	width: 57%;
+	float:right;
+}
+#fotoDescripcion img{
+	margin-left: 3%;
+	margin-bottom:3%;
+	width:30%;
+}
+#comentarios{
+	background-color:#f2f2f2 !important;
+}
+#comentarios img{
+	margin:2%;
+	width:10%;
+	border-radius:25%;
+
+}
+#miComentario img{
+	float:left;
+}
+#comentarios h5{
+	margin:0;
+	float:right;
+	margin-right:36%;
+	margin-top:5%;
+}
+#comentarios p{
+	margin-left:2%;
+	padding-bottom:2%;
+}
+#comentarios>article{
+	width:100%;
+	margin:0;
+}
+#comentarios h4{
+	margin:0;
+	margin-left:4%;
+	padding-top:2%;
+}
+#comentarios h3{
+	margin:0;
+	float:right;
+	margin-top:5%;
+	margin-right:45%;
+}
+#comentarios div{
+	display:inline-block;
+	width:95%;
+}
+#comentarios form{
+	margin-top:2%;
+	float:right;
+	width: 84%;
+}
+#escribirComentario{
+	width: 95%;
+	margin:2%;
+	height:50px;
+}
+#enviarComentario{
+	margin:0;
+	margin-left:88.3%;
+	margin-bottom: 1%
+}
+#subirHistoria{
+	display:inline-block;
+	background-color:white;
+	width: 85.6%;
+	margin-left:1.7%;
+	margin-top:0.5%;
+}
+#subirHistoria img{
+	margin-bottom: 15%;
+	width:37%;
+	float:left;
+	border-radius:25%;
+	margin-left:13%;
+}
+#subirHistoria>div{
+	width:25%;
+}
+#subirHistoria form{
+	margin-top:3%;
+	width:73%;
+	float:right;
+}
+#inputTitulo{
+	width: 90%;
+	margin-bottom:3%;
+	margin-top:-6%;
+}
+#inputEntrada{
+	width: 90%;
+	height: 75px;
+	margin-top: -2.2%;
+}
+#subirImagenEntrada{
+	float:left;
+	display:block;
+	margin-top:1%;
+	margin-bottom:1%;
+}
+#enviarEntrada{
+	float:right;
+	margin-right: 9.6%;
+	margin-top:1%;
+}
+#subirHistoria h2{
+	margin-top:3%;
+	margin-left:21%;
+}
+
+
+
+/*FOTOS*/
+
+
+
+#misFotos{
+	width:90%;
+	margin:0;
+	margin-top:0.5%;
+}
+#misFotos article{
+	width:22%;
+	display:inline-block;
+	background-color:white;
+	margin-left:2%;
+	margin-bottom:2%;
+}
+#misFotos img{
+	width:100%;
+} 
+
+
+
+/*BIOGRAFIA INFORMACION*/
+
+
+
+#informacionPerfil{
+	width:90%;
+	background-color:white;
+	display:inline-block;
+	margin-top:1%;
+}
+#informacionPerfil img{
+	float:left;
+	width:45%;
+	border-radius: 25%;
+	margin-top:1%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+#Nombre-frase-nombre{
+	width:45%;
+	float: right;
+	display:block;
+}
+#informacionPerfil h1{
+	text-align: center;
+	margin:0;
+	margin-top:39%;
+}
+#informacionPerfil h3{
+	text-align: center;
+	margin-top:4%;
+}
+#informacionPerfil form{
+	float:right;
+	width:45%;
+	margin-top: 6%;
+	margin-right: -4%;
+}
+.cambiarRegistro{
+	width: 70%;
+	height: 30px;
+}
+#cambiarBiografia{
+	margin:0;
+	margin-top:28%;
+	width:70%;
+	height:30px;
+}
+
+
+
+/*LINKS*/
+
+
+
+a:hover{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:link{
+	text-decoration:none;
+	color:black;
+}
+
+
+/*VERSION MOVIL*/
+@media screen and (max-device-width: 480px){
+	header{
+		display:block;
+		margin:-8px;
+		background-color:#00004d;
+		height:111px;
+	}
+	header section{
+		position:relative;
+		display:inline-block;
+		width: 33%;
+		height:100%;
+	}
+	header label{
+		color:white;
+	}
+	header h1{
+		padding-top: 9%;
+	}
+	#headerLogo{
+		display:none;
+	}
+	#headerPerfil div{
+		width: 100%;
+	}
+	#miNombre{
+		float:none;
+		margin:0;
+		width:auto;
+		font-size: 155%;
+		margin-top:5%;
+		margin-left:42%;
+	}
+	#headerPerfil img{
+		float:none;
+		margin:0;
+		width:auto;
+		margin-top:-10%;
+		width: 26%;
+		border-radius: 25%;
+		float: right;
+		margin-right: 10%;
+	}
+	#logout{
+		margin:0;
+		margin-top:8%;
+		margin-right:-16%;
+	}
+	#bFI h3{
+		font-size:60px !important;
+	}
+	#historias{
+		width: 98%;
+		margin:0;
+		margin-top:0.5%;
+	}
+	#historias article {
+   		width: 98%;
+	    display: inline-block;
+    	background-color: white;
+    	margin-left: 2%;
+    	margin-bottom: 2%;
+	}
+	#historias img{
+		width: 30%;
+		margin-left:5%;
+		border-radius:25%;
+	}
+	#historias h2{
+		font-size:270%;
+		margin:2%;
+		margin-left:14%;
+	}
+	#historias p{
+		font-size:185%;
+		margin-right: 28%;
+		margin-top:11%;
+		float:right;
+	}
+	#historias h4{
+		font-size:230%;
+		margin:0;
+		margin-top:1%;
+		margin-left:14%;
+	}
+	.contenidoHistoria{
+		font-size:300% !important;
+		margin:0;
+		margin-left:5%;
+		margin-right:5% !important;
+		margin-bottom: 3%;
+		margin-top:2% !important;
+	}
+	#usuariosRedSocial{
+		width:96% !important;
+		display:block;
+		margin-left:2%;
+	}
+	#usuariosRedSocial li{
+		width:100%;
+	}
+	#usuariosRedSocial img{
+		width:15%;
+		float:right;
+		margin:0;
+		margin-right:29%;
+		margin-top:3%;
+	}
+	#usuariosRedSocial p{
+		float:left;
+		margin:0;
+		font-size:430%;
+		margin-left: 29%;
+		margin-top:6%;
+	}
+	#menuAmigos {
+		display:none;
+		float:right;
+		margin-right:2%;
+	}
+	#tituloMenuAmigos label{
+		display:block !important;
+		text-align: center;
+		font-size:385%;
+		margin-bottom:1%;
+	}
+	#tituloMenuAmigos{
+		display:block !important;
+	}
+	#menuAmigos:checked + ul{
+		max-height:95em;
+		overflow-y: scroll !important;
+	}
+	#usuarioActivos{
+		margin-bottom:0;
+		margin-top:0 !important;
+	}
+	#usuarioActivos p{
+		display:none;
+		padding:0;
+		margin:0;
+	}
+	#usuarioActivos label{
+		display:block;
+		font-size:370%;
+	}
+	aside{
+		display:block;
+		width:96%;
+		margin-right:2%;
+	}
+	aside p{
+		font-size:430%;
+		padding-top: 0;
+		margin:0;
+		margin-right: 25%;
+		margin-top:2%;
+	}
+	aside img{
+		margin-left:20%;
+		width:15%;
+	}
+	nav>ul{
+		overflow:hidden !important;
+		max-height: 4.75em;
+		width:100%;
+	}
+	nav>ul>li{
+		margin:0;
+		line-height:85px;
+		margin-top:-1%;
+	}
+	#menuUsuariosActivos:checked + ul{
+		max-height:95em;
+		overflow-y: scroll !important;
+		position:absolute;
+		width:94.5%;
+
+	}
+	#flechas{
+		width:100%;
+	}
+	#flechas img{
+		width:8%;
+		margin-left:28.4%;
+		margin-top:-2%;
+	}
+	footer p{
+		font-size:170%;
+		display:inline-block;
+		margin-top:2%;
+		margin-left:38%;
+	}
+	ul{
+		height:90em !important;
+	}
+}
