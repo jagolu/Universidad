@@ -1,0 +1,11 @@
+Javier Gómez Luzón 2º Informática B1
+
+LINE:
+	Se ve que el tamaño de linea es 64B ya que a partir de ahí, el tiempo que se tarda en leer es cada vez la mitad. En cambio, todas las mediciones anteriores a 64 tardan aproximadamente lo mismo, y esto se debe a que con valores anteriores a 64, de cada dos lecturas, una da un fallo de chaché y otra da acierto, por lo que se tarda lo mismo con 64 que con valores mas pequeños.
+	Las mejores optimizaciones, para ver que ocurre lo comentado, son Ofast y O2. La peor optimización es O0.
+
+
+
+SIZE:
+	Se ve que el tamaño de caché es de 32K, 256K y 6144K ya que en esos puntos hay un salto hasta el siguiente valor. Al igual que en las pruebas de line, las mejores optimizaciones, para ver que ocurre lo descrito son Ofast y O2, en las que se ven claramente los saltos. En cambio, la peor optimizacion es O0.
+

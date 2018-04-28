@@ -1,0 +1,3 @@
+He usado dos objetos de condicion:
+	·depositar: Sirve para saber cuando algún productor ha depositado un elemento en el vector.
+	·extraer: Sirve para saber cuando algún consumidor ha recogido un elemento del vector.

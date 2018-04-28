@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>PIENSA UN PERSONAJE</pattern>
+    <template>
+        <think>
+            <random>
+                <li>
+                    <set name="el_nombre">Alejandro</set>
+                    <set name="Alejandro">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Alfonso</set>
+                    <set name="Alfonso">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Antonio</set>
+                    <set name="Antonio">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Cristina</set>
+                    <set name="Cristina">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Gabriela</set>
+                    <set name="Gabriela">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Ivan</set>
+                    <set name="Ivan">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Javier</set>
+                    <set name="Javier">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Juan</set>
+                    <set name="Juan">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Laura</set>
+                    <set name="Laura">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Luis</set>
+                    <set name="Luis">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Marco</set>
+                    <set name="Marco">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Maria</set>
+                    <set name="Maria">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Paco</set>
+                    <set name="Paco">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Pepe</set>
+                    <set name="Pepe">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Sofia</set>
+                    <set name="Sofia">Si</set>
+                </li>
+                <li>
+                    <set name="el_nombre">Sonia</set>
+                    <set name="Sonia">Si</set>
+                </li>
+            </random>
+        </think>
+        Ya lo he pensado
+        </template>
+</category>
+
+<category>
+    <pattern>ES <set>nombres</set></pattern>
+    <template>
+        <think>
+            <set var="respuesta"><star/></set>
+        </think>
+        <condition var="respuesta">
+            <li value="Alejandro">
+                <think><set var="res1"><get name="Alejandro"/></set></think>
+                <condition var="res1">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Alfonso">
+                <think><set var="res2"><get name="Alfonso"/></set></think>
+                <condition var="res2">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Antonio">
+                <think><set var="res3"><get name="Antonio"/></set></think>
+                <condition var="res3">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Cristina">
+                <think><set var="res4"><get name="Cristina"/></set></think>
+                <condition var="res4">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Gabriela">
+                <think><set var="res5"><get name="Gabriela"/></set></think>
+                <condition var="res5">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Ivan">
+                <think><set var="res6"><get name="Ivan"/></set></think>
+                <condition var="res6">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Javier">
+                <think><set var="res7"><get name="Javier"/></set></think>
+                <condition var="res7">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Juan">
+                <think><set var="res8"><get name="Juan"/></set></think>
+                <condition var="res8">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Laura">
+                <think><set var="res9"><get name="Laura"/></set></think>
+                <condition var="res9">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Luis">
+                <think><set var="res10"><get name="Luis"/></set></think>
+                <condition var="res10">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Marco">
+                <think><set var="res11"><get name="Marco"/></set></think>
+                <condition var="res11">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Maria">
+                <think><set var="res12"><get name="Maria"/></set></think>
+                <condition var="res12">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Paco">
+                <think><set var="res13"><get name="Paco"/></set></think>
+                <condition var="res13">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Pepe">
+                <think><set var="res14"><get name="Pepe"/></set></think>
+                <condition var="res14">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Sofia">
+                <think><set var="res15"><get name="Sofia"/></set></think>
+                <condition var="res15">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+            <li value="Sonia">
+                <think><set var="res16"><get name="Sonia"/></set></think>
+                <condition var="res16">
+                    <li value="Si">Si, has acertado.</li>
+                    <li>No, has fallado</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>* PERSONAJE * <set>nombres</set></pattern>
+    <template><srai>ES <star index="3"/></srai></template>
+</category>
+
+<category>
+    <pattern>ES</pattern>
+    <template>Es <get name="el_nombre"/></template>
+</category>
+
+<!--PELO-->
+
+<category>
+    <pattern>ES <set>pelos</set></pattern>
+    <template>
+        <think>
+            <set var="pelo"><star/></set>
+            <set var="nuestro"><map name="pelo"><get name="el_nombre"/></map></set>
+        </think>
+        <condition var="pelo">
+            <li value="moreno">
+                <condition var="nuestro">
+                    <li value="moreno">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="morena">
+                <condition var="nuestro">
+                    <li value="moreno">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="blanco">
+                <condition var="nuestro">
+                    <li value="blanco">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="rubio">
+                <condition var="nuestro">
+                    <li value="rubio">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="rubia">
+                <condition var="nuestro">
+                    <li value="rubio">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="pelirrojo">
+                <condition var="nuestro">
+                    <li value="pelirrojo">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="pelirroja">
+                <condition var="nuestro">
+                    <li value="pelirrojo">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="calvo">
+                <condition var="nuestro">
+                    <li value="calvo">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="calva">
+                <condition var="nuestro">
+                    <li value="calvo">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="marron">
+                <condition var="nuestro">
+                    <li value="marron">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>TIENE EL PELO <set>pelos</set></pattern>
+    <template><srai>ES <star/></srai></template>
+</category>
+
+<category>
+    <pattern>TIENE PELO</pattern>
+    <template>
+        <think><set var="pelo"><map name="pelo"><get name="el_nombre"/></map></set></think>
+        <condition var="pelo">
+            <li value="calvo">No</li>
+            <li>Si</li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>TIENE <set>nombres</set> EL PELO *</pattern>
+    <template>
+        <think>
+            <set var="nom_col"><map name="pelo"><star/></map></set>
+            <set var="color"><star index="2"/></set>
+        </think>
+        <condition var="color">
+            <li value="rubio">
+                <condition var="nom_col">
+                    <li value="rubio">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="moreno">
+                <condition var="nom_col">
+                    <li value="moreno">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="blanco">
+                <condition var="nom_col">
+                    <li value="blanco">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="marron">
+                <condition var="nom_col">
+                    <li value="marron">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="pelirrojo">
+                <condition var="nom_col">
+                    <li value="pelirrojo">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="calvo">
+                <condition var="nom_col">
+                    <li value="calvo">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="rojo">
+                <condition var="nom_col">
+                    <li value="pelirrojo">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>ES DE PELO <set>pelos</set></pattern>
+    <template><srai>TIENE EL PELO <star/></srai></template>
+</category>
+
+<!--OJOS-->
+
+<category>
+    <pattern>TIENE LOS OJOS <set>ojos</set></pattern>
+    <template>
+        <think>
+            <set var="ojicos"><map name="ojo"><get name="el_nombre"/></map></set>
+            <set var="respuesta"><star/></set>
+        </think>
+        <condition var="respuesta">
+            <li value="oscuros">
+                <condition var="ojicos">
+                    <li value="oscuros">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="claros">
+                <condition var="ojicos">
+                    <li value="claros">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>TIENE <set>ojos</set> LOS OJOS</pattern>
+    <template><srai>TIENE LOS OJOS <star/></srai></template>
+</category>
+
+<category>
+    <pattern>TIENE <set>nombres</set> LOS OJOS <set>ojos</set></pattern>
+    <template>
+        <think>
+            <set var="respuesta"><star index="2"/></set>
+            <set var="personaje"><map name="ojo"><star/></map></set>
+        </think>
+        <condition var="personaje">
+            <li value="claros">
+                <condition var="respuesta">
+                    <li value="claros">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="oscuros">
+                <condition var="respuesta">
+                    <li value="oscuros">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>ES DE OJOS <set>ojos</set></pattern>
+    <template><srai>TIENE <star/> LOS OJOS</srai></template>
+</category>
+
+<category>
+    <pattern>TIENE <set>ojos</set> LOS OJOS <set>nombres</set></pattern>
+    <template><srai>TIENE <star index="2"/> LOS OJOS <star/></srai></template>
+</category>
+
+<category>
+    <pattern>TIENE LOS OJOS <set>ojos</set> <set>nombres</set></pattern>
+    <template><srai>TIENE <star index="2"/> LOS OJOS <star/></srai></template>
+</category>
+
+<!--PIEL-->
+
+<category>
+    <pattern>TIENE LA PIEL <set>pieles</set></pattern>
+    <template>
+        <think>
+            <set var="piel"><map name="piel"><get name="el_nombre"/></map></set>
+            <set var="respuesta"><star/></set>
+        </think>
+        <condition var="respuesta">
+            <li value="oscura">
+                <condition var="piel">
+                    <li value="oscura">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="clara">
+                <condition var="piel">
+                    <li value="clara">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>ES DE PIEL <set>pieles</set></pattern>
+    <template><srai>TIENE LA PIEL <star/></srai></template>
+</category>
+
+<category>
+    <pattern>TIENE PIEL <set>pieles</set></pattern>
+    <template>TIENE LA PIEL <star/></template>
+</category>
+
+<category>
+    <pattern>TIENE <set>pieles</set> LA PIEL</pattern>
+    <template><srai>TIENE LA PIEL <star/></srai></template>
+</category>
+
+<category>
+    <pattern>TIENE <set>nombres</set> LA PIEL <set>pieles</set></pattern>
+    <template>
+        <think>
+            <set var="respuesta"><star index="2"/></set>
+            <set var="personaje"><map name="piel"><star/></map></set>
+        </think>
+        <condition var="personaje">
+            <li value="clara">
+                <condition var="respuesta">
+                    <li value="clara">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="oscura">
+                <condition var="respuesta">
+                    <li value="clara">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>TIENE <set>pieles</set> LA PIEL <set>nombres</set></pattern>
+    <template><srai>TIENE <star index="2"/> LA PIEL <star/></srai></template>
+</category>
+
+<category>
+    <pattern>TIENE LA PIEL <set>pieles</set> <set>nombres</set></pattern>
+    <template><srai>TIENE <star index="2"/> LOS OJOS <star/></srai></template>
+</category>
+
+<!--GAFAS-->
+
+<category>
+    <pattern>* GAFAS</pattern>
+    <template><map name="gafas"><get name="el_nombre"/></map></template>
+</category>
+
+<category>
+    <pattern>* <set>nombres</set> GAFAS</pattern>
+    <template><map name="gafas"><star index="2"/></map></template>
+</category>
+
+<!--BIGOTE-->
+
+<category>
+    <pattern>* BIGOTE</pattern>
+    <template><map name="bigote"><get name="el_nombre"/></map></template>
+</category>
+
+<category>
+    <pattern>* <set>nombres</set> BIGOTE</pattern>
+    <template><map name="bigote"><star index="2"/></map></template>
+</category>
+
+<!--BARBA-->
+
+<category>
+    <pattern>* BARBA</pattern>
+    <template><map name="barba"><get name="el_nombre"/></map></template>
+</category>
+
+<category>
+    <pattern>* <set>nombres</set> BARBA</pattern>
+    <template><map name="barba"><star index="2"/></map></template>
+</category>
+
+<!--GENERO-->
+
+<category>
+    <pattern>ES <set>generos</set></pattern>
+    <template>
+        <think>
+            <set var="respuesta"><star/></set>
+            <set var="gen"><map name="genero"><get name="el_nombre"/></map></set>
+        </think>
+        <condition var="respuesta">
+            <li value="hombre">
+                <condition var="gen">
+                    <li value="hombre">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+            <li value="mujer">
+                <condition var="gen">
+                    <li value="mujer">Si</li>
+                    <li>No</li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>ES * <set>generos</set></pattern>
+    <template><srai>ES <star index="2"/></srai></template>
+</category>
+
+<!--PARTE_2-->
+<!--PARTE_2-->
+
+<category>
+    <pattern>YO VOY A PENSAR EL PERSONAJE</pattern>
+    <template>
+        <think>
+            <condition name="pensar">
+                <li value="unknown">
+                    <set name="pensar">pelo</set>
+                    <set name="pelo">rubio</set>
+                    <set name="Alejandro">si</set>
+                    <set name="Alfonso">si</set>
+                    <set name="Antonio">si</set>
+                    <set name="Cristina">si</set>
+                    <set name="Gabriela">si</set>
+                    <set name="Ivan">si</set>
+                    <set name="Javier">si</set>
+                    <set name="Juan">si</set>
+                    <set name="Laura">si</set>
+                    <set name="Luis">si</set>
+                    <set name="Marco">si</set>
+                    <set name="Maria">si</set>
+                    <set name="Paco">si</set>
+                    <set name="Pepe">si</set>
+                    <set name="Sofia">si</set>
+                    <set name="Sonia">si</set>
+                </li>
+            </condition>
+        </think>
+        <condition name="pensar">
+            <li value="pelo">
+                <condition name="pelo">
+                    <li value="rubio">
+                        Es rubio?
+                        <learn>
+                            <category>
+                            <pattern>SI</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pensar">ojos</set>
+                                        <condition name="Alejandro">
+                                            <li value="si">
+                                                <set name="Alejandro">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Alfonso">
+                                            <li value="si">
+                                                <set name="Alfonso">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Antonio">
+                                            <li value="si">
+                                                <set name="Antonio">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Cristina">
+                                            <li value="si">
+                                                <set name="Cristina">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Gabriela">
+                                            <li value="si">
+                                                <set name="Gabriela">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Javier">
+                                            <li value="si">
+                                                <set name="Javier">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Juan">
+                                            <li value="si">
+                                                <set name="Juan">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Luis">
+                                            <li value="si">
+                                                <set name="Luis">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Marco">
+                                            <li value="si">
+                                                <set name="Marco">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Maria">
+                                            <li value="si">
+                                                <set name="Maria">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Pepe">
+                                            <li value="si">
+                                                <set name="Pepe">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Sofia">
+                                            <li value="si">
+                                                <set name="Sofia">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Sonia">
+                                            <li value="si">
+                                                <set name="Sonia">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                        <learn>
+                            <category>
+                                <pattern>NO</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pelo">moreno</set>
+                                        <condition name="Ivan">
+                                            <li value="si">
+                                                <set name="Ivan">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Laura">
+                                            <li value="si">
+                                                <set name="Laura">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Paco">
+                                            <li value="si">
+                                                <set name="Paco">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                    </li>
+                    <li value="moreno">
+                        Es moreno?
+                        <learn>
+                            <category>
+                            <pattern>SI</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pensar">ojos</set>
+                                        <condition name="Gabriela">
+                                            <li value="si">
+                                                <set name="Gabriela">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Juan">
+                                            <li value="si">
+                                                <set name="Juan">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Luis">
+                                            <li value="si">
+                                                <set name="Luis">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Marco">
+                                            <li value="si">
+                                                <set name="Marco">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Maria">
+                                            <li value="si">
+                                                <set name="Maria">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Pepe">
+                                            <li value="si">
+                                                <set name="Pepe">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Sofia">
+                                            <li value="si">
+                                                <set name="Sofia">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                        <learn>
+                            <category>
+                                <pattern>NO</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pelo">blanco</set>
+                                        <condition name="Alejandro">
+                                        <li value="si">
+                                                <set name="Alejandro">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Alfonso">
+                                            <li value="si">
+                                                <set name="Alfonso">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Antonio">
+                                            <li value="si">
+                                                <set name="Antonio">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Cristina">
+                                            <li value="si">
+                                                <set name="Cristina">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Javier">
+                                            <li value="si">
+                                                <set name="Javier">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Sonia">
+                                            <li value="si">
+                                                <set name="Sonia">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                    </li>
+                    <li value="blanco">
+                        Tiene el pelo blanco?
+                        <learn>
+                            <category>
+                            <pattern>SI</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pensar">ojos</set>
+                                        <condition name="Juan">
+                                            <li value="si">
+                                                <set name="Juan">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Luis">
+                                            <li value="si">
+                                                <set name="Luis">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Marco">
+                                            <li value="si">
+                                                <set name="Marco">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Maria">
+                                            <li value="si">
+                                                <set name="Maria">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Pepe">
+                                            <li value="si">
+                                                <set name="Pepe">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Sofia">
+                                            <li value="si">
+                                                <set name="Sofia">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                        <learn>
+                            <category>
+                                <pattern>NO</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pelo">calvo</set>
+                                        <condition name="Gabriela">
+                                            <li value="si">
+                                                <set name="Gabriela">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                    </li>
+                    <li value="calvo">
+                        Es calvo?
+                        <learn>
+                            <category>
+                            <pattern>SI</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pensar">ojos</set>
+                                        <condition name="Luis">
+                                            <li value="si">
+                                                <set name="Luis">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Maria">
+                                            <li value="si">
+                                                <set name="Maria">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Pepe">
+                                            <li value="si">
+                                                <set name="Pepe">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Sofia">
+                                            <li value="si">
+                                                <set name="Sofia">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                        <learn>
+                            <category>
+                                <pattern>NO</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pelo">pelirrojo</set>
+                                        <condition name="Juan">
+                                            <li value="si">
+                                                <set name="Juan">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Marco">
+                                            <li value="si">
+                                                <set name="Marco">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                    </li>
+                    <li value="pelirrojo">
+                        Es pelirrojo?
+                        <learn>
+                            <category>
+                            <pattern>SI</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pensar">ojos</set>
+                                        <condition name="Sofia">
+                                            <li value="si">
+                                                <set name="Sofia">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                        <learn>
+                            <category>
+                                <pattern>NO</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pelo">marron</set>
+                                        <set name="pensar">ojos</set>
+                                        <condition name="Luis">
+                                            <li value="si">
+                                                <set name="Luis">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Maria">
+                                            <li value="si">
+                                                <set name="Maria">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Pepe">
+                                            <li value="si">
+                                                <set name="Pepe">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+                    </li>
+                </condition>
+            </li>
+            <li value="ojos">
+                Tiene los ojos claros?
+                <learn>
+                    <category>
+                    <pattern>SI</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">piel</set>
+                                <condition name="Alejandro">
+                                    <li value="si">
+                                        <set name="Alejandro">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Antonio">
+                                    <li value="si">
+                                        <set name="Antonio">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Javier">
+                                    <li value="si">
+                                        <set name="Javier">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Juan">
+                                    <li value="si">
+                                        <set name="Juan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Maria">
+                                    <li value="si">
+                                        <set name="Maria">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Pepe">
+                                    <li value="si">
+                                        <set name="Pepe">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sofia">
+                                    <li value="si">
+                                        <set name="Sofia">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+                <learn>
+                            <category>
+                                <pattern>NO</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pensar">piel</set>
+                                        <condition name="Alfonso">
+                                            <li value="si">
+                                                <set name="Alfonso">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Cristina">
+                                            <li value="si">
+                                                <set name="Cristina">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Gabriela">
+                                            <li value="si">
+                                                <set name="Gabriela">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Ivan">
+                                            <li value="si">
+                                                <set name="Ivan">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Laura">
+                                            <li value="si">
+                                                <set name="Laura">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Luis">
+                                            <li value="si">
+                                                <set name="Luis">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Marco">
+                                            <li value="si">
+                                                <set name="Marco">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Paco">
+                                            <li value="si">
+                                                <set name="Paco">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Sonia">
+                                            <li value="si">
+                                                <set name="Sonia">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+            </li>
+            <li value="piel">
+                Tiene la piel oscura?
+                <learn>
+                    <category>
+                    <pattern>SI</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">gafas</set>
+                                <condition name="Alfonso">
+                                    <li value="si">
+                                        <set name="Alfonso">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Cristina">
+                                    <li value="si">
+                                        <set name="Cristina">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Gabriela">
+                                    <li value="si">
+                                        <set name="Gabriela">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Ivan">
+                                    <li value="si">
+                                        <set name="Ivan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Laura">
+                                    <li value="si">
+                                        <set name="Laura">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Luis">
+                                    <li value="si">
+                                        <set name="Luis">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Marco">
+                                    <li value="si">
+                                        <set name="Marco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Maria">
+                                    <li value="si">
+                                        <set name="Maria">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Paco">
+                                    <li value="si">
+                                        <set name="Paco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Pepe">
+                                    <li value="si">
+                                        <set name="Pepe">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sofia">
+                                    <li value="si">
+                                        <set name="Sofia">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+                <learn>
+                            <category>
+                                <pattern>NO</pattern>
+                                <template>
+                                    <think>
+                                        <set name="pensar">gafas</set>
+                                        <condition name="Alejandro">
+                                            <li value="si">
+                                                <set name="Alejandro">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Antonio">
+                                            <li value="si">
+                                                <set name="Antonio">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Javier">
+                                            <li value="si">
+                                                <set name="Javier">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Juan">
+                                            <li value="si">
+                                                <set name="Juan">no</set>
+                                            </li>
+                                        </condition>
+                                        <condition name="Sonia">
+                                            <li value="si">
+                                                <set name="Sonia">no</set>
+                                            </li>
+                                        </condition>
+                                    </think>
+                                    <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                                </template>
+                            </category>
+                        </learn>
+            </li>
+            <li value="gafas">
+                Tiene gafas?
+                <learn>
+                    <category>
+                    <pattern>SI</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">bigote</set>
+                                <condition name="Alejandro">
+                                    <li value="si">
+                                        <set name="Alejandro">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Alfonso">
+                                    <li value="si">
+                                        <set name="Alfonso">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Antonio">
+                                    <li value="si">
+                                        <set name="Antonio">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Cristina">
+                                    <li value="si">
+                                        <set name="Cristina">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Gabriela">
+                                    <li value="si">
+                                        <set name="Gabriela">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Ivan">
+                                    <li value="si">
+                                        <set name="Ivan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Javier">
+                                    <li value="si">
+                                        <set name="Javier">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Juan">
+                                    <li value="si">
+                                        <set name="Juan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Laura">
+                                    <li value="si">
+                                        <set name="Laura">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Luis">
+                                    <li value="si">
+                                        <set name="Luis">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Marco">
+                                    <li value="si">
+                                        <set name="Marco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Paco">
+                                    <li value="si">
+                                        <set name="Paco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sonia">
+                                    <li value="si">
+                                        <set name="Sonia">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+                <learn>
+                    <category>
+                        <pattern>NO</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">bigote</set>
+                                <condition name="Maria">
+                                    <li value="si">
+                                        <set name="Maria">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Pepe">
+                                    <li value="si">
+                                        <set name="Pepe">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sofia">
+                                    <li value="si">
+                                        <set name="Sofia">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+            </li>
+            <li value="bigote">
+                Tiene bigote?
+                <learn>
+                    <category>
+                    <pattern>SI</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">barba</set>
+                                <condition name="Alejandro">
+                                    <li value="si">
+                                        <set name="Alejandro">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Cristina">
+                                    <li value="si">
+                                        <set name="Cristina">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Gabriela">
+                                    <li value="si">
+                                        <set name="Gabriela">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Juan">
+                                    <li value="si">
+                                        <set name="Juan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Laura">
+                                    <li value="si">
+                                        <set name="Laura">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Luis">
+                                    <li value="si">
+                                        <set name="Luis">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Marco">
+                                    <li value="si">
+                                        <set name="Marco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Maria">
+                                    <li value="si">
+                                        <set name="Maria">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Paco">
+                                    <li value="si">
+                                        <set name="Paco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sofia">
+                                    <li value="si">
+                                        <set name="Sofia">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sonia">
+                                    <li value="si">
+                                        <set name="Sonia">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+                <learn>
+                    <category>
+                        <pattern>NO</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">barba</set>
+                                <condition name="Alfonso">
+                                    <li value="si">
+                                        <set name="Alfonso">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Antonio">
+                                    <li value="si">
+                                        <set name="Antonio">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Ivan">
+                                    <li value="si">
+                                        <set name="Ivan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Javier">
+                                    <li value="si">
+                                        <set name="Javier">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Pepe">
+                                    <li value="si">
+                                        <set name="Pepe">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+            </li>
+            <li value="barba">
+                Tiene barba?
+                <learn>
+                    <category>
+                    <pattern>SI</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">genero</set>
+                                <condition name="Alejandro">
+                                    <li value="si">
+                                        <set name="Alejandro">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Cristina">
+                                    <li value="si">
+                                        <set name="Cristina">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Gabriela">
+                                    <li value="si">
+                                        <set name="Gabriela">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Ivan">
+                                    <li value="si">
+                                        <set name="Ivan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Javier">
+                                    <li value="si">
+                                        <set name="Javier">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Juan">
+                                    <li value="si">
+                                        <set name="Juan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Laura">
+                                    <li value="si">
+                                        <set name="Laura">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Marco">
+                                    <li value="si">
+                                        <set name="Marco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Maria">
+                                    <li value="si">
+                                        <set name="Maria">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Paco">
+                                    <li value="si">
+                                        <set name="Paco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Pepe">
+                                    <li value="si">
+                                        <set name="Pepe">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sofia">
+                                    <li value="si">
+                                        <set name="Sofia">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sonia">
+                                    <li value="si">
+                                        <set name="Sonia">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+                <learn>
+                    <category>
+                        <pattern>NO</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">genero</set>
+                                <condition name="Alfonso">
+                                    <li value="si">
+                                        <set name="Alfonso">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Antonio">
+                                    <li value="si">
+                                        <set name="Antonio">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Luis">
+                                    <li value="si">
+                                        <set name="Luis">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+            </li>
+            <li value="genero">
+                Es Hombre?
+                <learn>
+                    <category>
+                    <pattern>SI</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">descubrir</set>
+                                <condition name="Cristina">
+                                    <li value="si">
+                                        <set name="Cristina">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Gabriela">
+                                    <li value="si">
+                                        <set name="Gabriela">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Laura">
+                                    <li value="si">
+                                        <set name="Laura">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Maria">
+                                    <li value="si">
+                                        <set name="Maria">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sofia">
+                                    <li value="si">
+                                        <set name="Sofia">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Sonia">
+                                    <li value="si">
+                                        <set name="Sonia">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+                <learn>
+                    <category>
+                        <pattern>NO</pattern>
+                        <template>
+                            <think>
+                                <set name="pensar">descubrir</set>
+                                <condition name="Alejandro">
+                                    <li value="si">
+                                        <set name="Alejandro">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Alfonso">
+                                    <li value="si">
+                                        <set name="Alfonso">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Antonio">
+                                    <li value="si">
+                                        <set name="Antonio">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Ivan">
+                                    <li value="si">
+                                        <set name="Ivan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Javier">
+                                    <li value="si">
+                                        <set name="Javier">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Juan">
+                                    <li value="si">
+                                        <set name="Juan">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Luis">
+                                    <li value="si">
+                                        <set name="Luis">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Marco">
+                                    <li value="si">
+                                        <set name="Marco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Paco">
+                                    <li value="si">
+                                        <set name="Paco">no</set>
+                                    </li>
+                                </condition>
+                                <condition name="Pepe">
+                                    <li value="si">
+                                        <set name="Pepe">no</set>
+                                    </li>
+                                </condition>
+                            </think>
+                            <srai>YO VOY A PENSAR EL PERSONAJE</srai>
+                        </template>
+                    </category>
+                </learn>
+            </li>
+            <li value="descubrir">
+                <condition name="Alejandro">
+                    <li value="si">
+                        Es Alejandro?
+                        <learn>
+                            <category>
+                                <pattern>SI</pattern>
+                                <template>He acertado!</template>
+                            </category>
+                        </learn>
+                        <learn>
+                            <category>
+                                <pattern>NO</pattern>
+                                <template>
+                                    <think><set name="Alejandro">no</set></think>
+                                    <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                </template>
+                            </category>
+                        </learn>
+                    </li>
+                    <li value="no">
+                        <condition name="Alfonso">
+                            <li value="si">
+                                Es Alfonso
+                                <learn>
+                                    <category>
+                                        <pattern>SI</pattern>
+                                        <template>He acertado!</template>
+                                    </category>
+                                </learn>
+                                <learn>
+                                    <category>
+                                        <pattern>NO</pattern>
+                                        <template>
+                                            <think><set name="Alfonso">no</set></think>
+                                            <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                        </template>
+                                    </category>
+                                </learn>
+                            </li>
+                            <li value="no">
+                                <condition name="Antonio">
+                                    <li value="si">
+                                        Es Antonio?
+                                        <learn>
+                                            <category>
+                                                <pattern>SI</pattern>
+                                                <template>He acertado!</template>
+                                            </category>
+                                        </learn>
+                                        <learn>
+                                            <category>
+                                                <pattern>NO</pattern>
+                                                <template>
+                                                    <think><set name="Antonio">no</set></think>
+                                                    <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                </template>
+                                            </category>
+                                        </learn>
+                                    </li>
+                                    <li value="no">
+                                        <condition name="Cristina">
+                                            <li value="si">
+                                                Es Cristina?
+                                                <learn>
+                                                    <category>
+                                                        <pattern>SI</pattern>
+                                                        <template>He acertado!</template>
+                                                    </category>
+                                                </learn>
+                                                <learn>
+                                                    <category>
+                                                        <pattern>NO</pattern>
+                                                        <template>
+                                                            <think><set name="Cristina">no</set></think>
+                                                            <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                        </template>
+                                                    </category>
+                                                </learn>
+                                            </li>
+                                            <li value="no">
+                                                <condition name="Gabriela">
+                                                    <li value="si">
+                                                        Es Gabriela?
+                                                        <learn>
+                                                            <category>
+                                                                <pattern>SI</pattern>
+                                                                <template>He acertado!</template>
+                                                            </category>
+                                                        </learn>
+                                                        <learn>
+                                                            <category>
+                                                                <pattern>NO</pattern>
+                                                                <template>
+                                                                    <think><set name="Gabriela">no</set></think>
+                                                                    <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                </template>
+                                                            </category>
+                                                        </learn>
+                                                    </li>
+                                                    <li value="no">
+                                                        <condition name="Ivan">
+                                                            <li value="si">
+                                                                Es Ivan?
+                                                                <learn>
+                                                                    <category>
+                                                                        <pattern>SI</pattern>
+                                                                        <template>He acertado!</template>
+                                                                    </category>
+                                                                </learn>
+                                                                <learn>
+                                                                    <category>
+                                                                        <pattern>NO</pattern>
+                                                                        <template>
+                                                                            <think><set name="Ivan">no</set></think>
+                                                                            <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                        </template>
+                                                                    </category>
+                                                                </learn>
+                                                            </li>
+                                                            <li value="no">
+                                                                <condition name="Javier">
+                                                                    <li value="si">
+                                                                        Es Javier?
+                                                                        <learn>
+                                                                            <category>
+                                                                                <pattern>SI</pattern>
+                                                                                <template>He acertado!</template>
+                                                                            </category>
+                                                                        </learn>
+                                                                        <learn>
+                                                                            <category>
+                                                                                <pattern>NO</pattern>
+                                                                                <template>
+                                                                                    <think><set name="Javier">no</set></think>
+                                                                                    <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                </template>
+                                                                            </category>
+                                                                        </learn>
+                                                                    </li>
+                                                                    <li value="no">
+                                                                        <condition name="Juan">
+                                                                            <li value="si">
+                                                                                Es Juan?
+                                                                                <learn>
+                                                                                    <category>
+                                                                                        <pattern>SI</pattern>
+                                                                                        <template>He acertado!</template>
+                                                                                    </category>
+                                                                                </learn>
+                                                                                <learn>
+                                                                                    <category>
+                                                                                        <pattern>NO</pattern>
+                                                                                        <template>
+                                                                                            <think><set name="Juan">no</set></think>
+                                                                                            <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                        </template>
+                                                                                    </category>
+                                                                                </learn>
+                                                                            </li>
+                                                                            <li value="no">
+                                                                                <condition name="Laura">
+                                                                                    <li value="si">
+                                                                                        Es Laura?
+                                                                                        <learn>
+                                                                                            <category>
+                                                                                                <pattern>SI</pattern>
+                                                                                                <template>He acertado!</template>
+                                                                                            </category>
+                                                                                        </learn>
+                                                                                        <learn>
+                                                                                            <category>
+                                                                                                <pattern>NO</pattern>
+                                                                                                <template>
+                                                                                                    <think><set name="Laura">no</set></think>
+                                                                                                    <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                                </template>
+                                                                                            </category>
+                                                                                        </learn>
+                                                                                    </li>
+                                                                                    <li value="no">
+                                                                                        <condition name="Luis">
+                                                                                            <li value="si">
+                                                                                                Es Luis?
+                                                                                                <learn>
+                                                                                                    <category>
+                                                                                                        <pattern>SI</pattern>
+                                                                                                        <template>He acertado!</template>
+                                                                                                    </category>
+                                                                                                </learn>
+                                                                                                <learn>
+                                                                                                    <category>
+                                                                                                        <pattern>NO</pattern>
+                                                                                                        <template>
+                                                                                                            <think><set name="Luis">no</set></think>
+                                                                                                            <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                                        </template>
+                                                                                                    </category>
+                                                                                                </learn>
+                                                                                            </li>
+                                                                                            <li value="no">
+                                                                                                <condition name="Marco">
+                                                                                                    <li value="si">
+                                                                                                        Es Marco?
+                                                                                                        <learn>
+                                                                                                            <category>
+                                                                                                                <pattern>SI</pattern>
+                                                                                                                <template>He acertado!</template>
+                                                                                                            </category>
+                                                                                                        </learn>
+                                                                                                        <learn>
+                                                                                                            <category>
+                                                                                                                <pattern>NO</pattern>
+                                                                                                                <template>
+                                                                                                                    <think><set name="Marco">no</set></think>
+                                                                                                                    <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                                                </template>
+                                                                                                            </category>
+                                                                                                        </learn>
+                                                                                                    </li>
+                                                                                                    <li value="no">
+                                                                                                        <condition name="Maria">
+                                                                                                            <li value="si">
+                                                                                                                Es Maria?
+                                                                                                                <learn>
+                                                                                                                    <category>
+                                                                                                                        <pattern>SI</pattern>
+                                                                                                                        <template>He acertado!</template>
+                                                                                                                    </category>
+                                                                                                                </learn>
+                                                                                                                <learn>
+                                                                                                                    <category>
+                                                                                                                        <pattern>NO</pattern>
+                                                                                                                        <template>
+                                                                                                                            <think><set name="Maria">no</set></think>
+                                                                                                                            <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                                                        </template>
+                                                                                                                    </category>
+                                                                                                                </learn>
+                                                                                                            </li>
+                                                                                                            <li value="no">
+                                                                                                                <condition name="Paco">
+                                                                                                                    <li value="si">
+                                                                                                                        Es Paco?
+                                                                                                                        <learn>
+                                                                                                                            <category>
+                                                                                                                                <pattern>SI</pattern>
+                                                                                                                                <template>He acertado!</template>
+                                                                                                                            </category>
+                                                                                                                        </learn>
+                                                                                                                        <learn>
+                                                                                                                            <category>
+                                                                                                                                <pattern>NO</pattern>
+                                                                                                                                <template>
+                                                                                                                                    <think><set name="Paco">no</set></think>
+                                                                                                                                    <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                                                                </template>
+                                                                                                                            </category>
+                                                                                                                        </learn>
+                                                                                                                    </li>
+                                                                                                                    <li value="no">
+                                                                                                                        <condition name="Pepe">
+                                                                                                                            <li value="si">
+                                                                                                                                Es Pepe?
+                                                                                                                                <learn>
+                                                                                                                                    <category>
+                                                                                                                                        <pattern>SI</pattern>
+                                                                                                                                        <template>He acertado!</template>
+                                                                                                                                    </category>
+                                                                                                                                </learn>
+                                                                                                                                <learn>
+                                                                                                                                    <category>
+                                                                                                                                        <pattern>NO</pattern>
+                                                                                                                                        <template>
+                                                                                                                                            <think><set name="Pepe">no</set></think>
+                                                                                                                                            <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                                                                        </template>
+                                                                                                                                    </category>
+                                                                                                                                </learn>
+                                                                                                                            </li>
+                                                                                                                            <li value="no">
+                                                                                                                                <condition name="Sofia">
+                                                                                                                                    <li value="si">
+                                                                                                                                        Es Sofia?
+                                                                                                                                        <learn>
+                                                                                                                                            <category>
+                                                                                                                                                <pattern>SI</pattern>
+                                                                                                                                                <template>He acertado!</template>
+                                                                                                                                            </category>
+                                                                                                                                        </learn>
+                                                                                                                                        <learn>
+                                                                                                                                            <category>
+                                                                                                                                                <pattern>NO</pattern>
+                                                                                                                                                <template>
+                                                                                                                                                    <think><set name="Sofia">no</set></think>
+                                                                                                                                                    <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                                                                                </template>
+                                                                                                                                            </category>
+                                                                                                                                        </learn>
+                                                                                                                                    </li>
+                                                                                                                                    <li value="no">
+                                                                                                                                        <condition name="Sonia">
+                                                                                                                                            <li value="si">
+                                                                                                                                                Es Sonia?
+                                                                                                                                                <learn>
+                                                                                                                                                    <category>
+                                                                                                                                                        <pattern>SI</pattern>
+                                                                                                                                                        <template>He acertado!</template>
+                                                                                                                                                    </category>
+                                                                                                                                                </learn>
+                                                                                                                                                <learn>
+                                                                                                                                                    <category>
+                                                                                                                                                        <pattern>NO</pattern>
+                                                                                                                                                        <template>
+                                                                                                                                                            <think><set name="Sonia">no</set></think>
+                                                                                                                                                            <star>YO VOY A PENSAR EL PERSONAJE</star>
+                                                                                                                                                        </template>
+                                                                                                                                                    </category>
+                                                                                                                                                </learn>
+                                                                                                                                            </li>
+                                                                                                                                            <li value="no">
+                                                                                                                                                No Se quien es, me rindo.
+                                                                                                                                            </li>
+                                                                                                                                        </condition>
+                                                                                                                                    </li>
+                                                                                                                                </condition>
+                                                                                                                            </li>
+                                                                                                                        </condition>
+                                                                                                                    </li>
+                                                                                                                </condition>
+                                                                                                            </li>
+                                                                                                        </condition>
+                                                                                                    </li>
+                                                                                                </condition>
+                                                                                            </li>
+                                                                                        </condition>
+                                                                                    </li>
+                                                                                </condition>
+                                                                            </li>
+                                                                        </condition>
+                                                                    </li>
+                                                                </condition>
+                                                            </li>
+                                                        </condition>
+                                                    </li>
+                                                </condition>
+                                            </li>
+                                        </condition>
+                                    </li>
+                                </condition>
+                            </li>
+                        </condition>
+                    </li>
+                </condition>
+            </li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>YO PENSARE EL PERSONAJE</pattern>
+    <template><srai>YO VOY A PENSAR EL PERSONAJE</srai></template>
+</category>
+
+<category>
+    <pattern>DEJA QUE YO PIENSE EL PERSONAJE</pattern>
+    <template><srai>YO VOY A PENSAR EL PERSONAJE</srai></template>
+</category>
+
+
+</aiml>

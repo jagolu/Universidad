@@ -1,0 +1,4 @@
+He usado 3 objetos condicion:
+	·esperar: Para hacer esperar a los clientes que han llegado a la sala de espera cuando ya habia gente. Y luego para hacerlos sentarse en la silla de pelarse.
+	·dormir: Para hacer dormir al barbero y para despertarlo cuando llega algún cliente.
+	·terminado: Para indicar al cliente que esta en la silla de pelado que su pelado a terminado y puede salir de la barbería.

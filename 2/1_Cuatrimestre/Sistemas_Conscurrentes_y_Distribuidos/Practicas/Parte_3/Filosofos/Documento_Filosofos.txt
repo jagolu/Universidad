@@ -1,0 +1,7 @@
+Mi solución para el problema ha sido:
+	·Cada filósofo envía un mensaje a cada tenedor y espera su respuesta.
+	·Cada tenedor está en un bucle infinito girando hasta que un filósofo lo reclame.
+
+El interbloqueo se produce cuando todos los filósofos cogen el tenedor de su izquierda a la vez.
+
+He solucionado eso haciendo que el filósofo 1 empiece a coger tenedor por su derecha.

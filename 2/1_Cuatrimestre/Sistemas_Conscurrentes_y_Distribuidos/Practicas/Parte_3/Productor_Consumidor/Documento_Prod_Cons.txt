@@ -1,0 +1,6 @@
+Cambios realizados:
+
+	·En todos los MPI_Ssend y MPI_ Recv cambié "buffer" por 5, ya que ahora el buffer es el proceso 5.
+	·En el else de buffer, cambie el if que hay dentro por: <=4, en vez de ==0. Ya que ahora los productores son del 0 al 4.
+	·Cambié algunos tags de los MPI_Ssend y MPI_Recv para poder diferenciar mejor entre los productores y consumidores.
+	·En el main cambié para que pidiera 10 procesos en vez de 3. Y que los 5 primeros entraran en productor, el sexto en el buffer y el resto en consumidor.

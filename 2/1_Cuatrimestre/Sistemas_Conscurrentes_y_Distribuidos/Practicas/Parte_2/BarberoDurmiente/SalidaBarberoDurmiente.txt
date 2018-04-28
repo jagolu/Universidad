@@ -1,0 +1,66 @@
+Entrando cliente 1
+Entrando cliente 2
+Entrando cliente 0
+Entrando cliente 3
+Despertando al barbero
+Pelando...
+Entrando cliente 4
+Cliente terminado 1
+Pelando...
+Cliente terminado 2
+Pelando...
+Cliente terminado 4
+Pelando...
+Cliente terminado 3
+Pelando...
+Entrando cliente 1
+Cliente terminado 0
+Pelando...
+Entrando cliente 3
+Cliente terminado 1
+Pelando...
+Cliente terminado 3
+El barbero esta durmiendo
+Entrando cliente 0
+Despertando al barbero
+Pelando...
+Entrando cliente 2
+Cliente terminado 0
+Pelando...
+Entrando cliente 0
+Entrando cliente 4
+Cliente terminado 2
+Pelando...
+Cliente terminado 0
+Pelando...
+Entrando cliente 3
+Cliente terminado 4
+Pelando...
+Entrando cliente 1
+Entrando cliente 0
+Cliente terminado 3
+Pelando...
+Entrando cliente 4
+Cliente terminado 1
+Pelando...
+Entrando cliente 2
+Cliente terminado 0
+Pelando...
+Cliente terminado 4
+Pelando...
+Cliente terminado 2
+El barbero esta durmiendo
+Entrando cliente 2
+Despertando al barbero
+Pelando...
+Entrando cliente 3
+Cliente terminado 2
+Pelando...
+Entrando cliente 2
+Cliente terminado 3
+Pelando...
+Cliente terminado 2
+El barbero esta durmiendo
+Entrando cliente 4
+Despertando al barbero
+Pelando...

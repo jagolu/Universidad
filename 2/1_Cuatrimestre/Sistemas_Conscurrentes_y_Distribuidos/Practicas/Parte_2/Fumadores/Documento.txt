@@ -1,0 +1,3 @@
+He usado dos objetos condicion:
+	·poner: Para saber cuando el estanquero pone un ingrediente en la mesa.
+	·Un array coger: para saber cuando coge cada fumador su ingrediente.

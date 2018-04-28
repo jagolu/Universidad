@@ -1,0 +1,47 @@
+Puesto ingrediente 2
+Fumador 2 recoge el ingrediente 2
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 2
+Fumador 2 recoge el ingrediente 2
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 0
+Fumador 0 recoge el ingrediente 0
+Puesto ingrediente 2
+Fumador 2 recoge el ingrediente 2
+Puesto ingrediente 2
+Fumador 2 recoge el ingrediente 2
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 0
+Fumador 0 recoge el ingrediente 0
+Puesto ingrediente 0
+Fumador 0 recoge el ingrediente 0
+Puesto ingrediente 0
+Fumador 0 recoge el ingrediente 0
+Puesto ingrediente 0
+Fumador 0 recoge el ingrediente 0
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 0
+Fumador 0 recoge el ingrediente 0
+Puesto ingrediente 2
+Fumador 2 recoge el ingrediente 2
+Puesto ingrediente 2
+Fumador 2 recoge el ingrediente 2
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 0
+Fumador 0 recoge el ingrediente 0
+Puesto ingrediente 2
+Fumador 2 recoge el ingrediente 2
+Puesto ingrediente 1
+Fumador 1 recoge el ingrediente 1
+Puesto ingrediente 2

@@ -1,0 +1,15 @@
+*Ejercicio Productor-Consumidor*
+-Semáforos: 
+	·leer (Valor inicial=0), escribir (Valor inicial=Tamaño del vector). Estos dos semáforos juntos hacen que no se pueda leer un dato o escribirlo a la vez y que así no se pierdan datos.
+	·mutex (Valor inicial=1). Este semáforo hace que al imprimirse por pantalla los mensajes aparezcan correctamente.
+-Hay dos hebras: 
+	·Hebra_productor: esta hebra ejecuta un sem_wait de escribir y mutex, y un sem_post de mutex y leer.
+	·Hebra_consumidor: esta hebra tiene un sem_wait de leer y mutex, y un sem_post de mutex y escribir.
+
+*Ejercicio Fumadores*
+-Semáforos:
+	·Un vector de semáforos sem_fumadores(Valor inicial de todos los semáforos del vector=0) y otro vector de semáforos sem_terminado(Valor inicial de todos los semáforos del vector=1). Estos dos semáforos juntos hacen que el estanquero no pueda producir ingredientes mientras tiene un ingrediente en espera y que no fumen los fumadores sin tener su ingrediente. Están en un vector para no escribir tanto código.
+	·mutex (Valor inicial =1). Este semáforo hace que al escribir los mensajes en pantalla se impriman correctamente.
+-Hay cuatro hebras:
+ 	·Tres hebras fumador: que ejecutan cada una un sem_wait de su semáforo sem_fumadores correspondiente, un sem_wait de mutex, un sem_post de mutex y el correspondiente sem_post de su semáforo sem_terminado correspondiente.
+	·Hebra Estanquero: que ejecuta un sem_wait de sem_terminado del ingrediente que se haya producido, un sem_wait de mutex, un sem_post de mutex y un sem_post de sem_fumadores del ingrediente que se ha creado.

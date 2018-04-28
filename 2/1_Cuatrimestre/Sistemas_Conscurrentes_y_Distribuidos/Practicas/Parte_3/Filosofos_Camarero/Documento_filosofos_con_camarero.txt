@@ -1,0 +1,1 @@
+Los filósofos le envían mensajes al camarero para poder sentarse y el camarero se lo dara mientras halla 4 filósofos o menos en la mesa. Y los filósofos enviaran otro mensaje al camarero para levantarse y deberá darle el permiso el camarero para poder levantarse. 

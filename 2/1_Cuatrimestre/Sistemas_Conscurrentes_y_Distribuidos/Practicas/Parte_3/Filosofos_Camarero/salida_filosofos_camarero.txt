@@ -1,0 +1,139 @@
+Filosofo 4 PENSANDO
+Filosofo 0 PENSANDO
+Filosofo 2 PENSANDO
+Filosofo 8 PENSANDO
+Filosofo 6 PENSANDO
+El filosofo 8 se sienta a la mesa
+El camarero recibe una peticion del filosofo 4
+El camarero le da permiso al filosofo 4 para levantarse de la mesa
+El camarero recibe una peticion del filosofo 2
+El camarero le da permiso al filosofo 2 para levantarse de la mesa
+El camarero recibe una peticion del filosofo 6
+El filosofo 4 se sienta a la mesa
+El filosofo 0 se sienta a la mesa
+El filosofo 0 coge el tenedor de su derecha (9).
+El filosofo 0 coge el tenedor de su izquierda (1).
+Ten. 1 recibe petic. de 0
+Filosofo 0 COMIENDO
+Ten. 9 recibe petic. de 0
+El filosofo 4 coge el tenedor de su izquierda (5).
+El filosofo 4 coge el tenedor de su derecha (3).
+Filosofo 4 COMIENDO
+Ten. 3 recibe petic. de 4
+Ten. 5 recibe petic. de 4
+El filosofo 6 se sienta a la mesa
+El filosofo 6 coge el tenedor de su izquierda (7).
+Ten. 7 recibe petic. de 6
+El filosofo 2 se sienta a la mesa
+Filosofo 4 suelta tenedor izq ...5
+Ten. 5 recibe liberac. de 4
+Ten. 5 recibe petic. de 6
+El filosofo 6 coge el tenedor de su derecha (5).
+Filosofo 6 COMIENDO
+Ten. 1 recibe liberac. de 0
+Filosofo 0 suelta tenedor izq ...1
+Ten. 9 recibe liberac. de 0
+Filosofo 0 suelta tenedor der ...9
+El filosofo 0 se levanta de la mesa.
+Filosofo 0 PENSANDO
+El camarero le da permiso al filosofo 6 para levantarse de la mesa
+Ten. 9 recibe petic. de 8
+El filosofo 8 coge el tenedor de su izquierda (9).
+Ten. 3 recibe liberac. de 4
+Filosofo 4 suelta tenedor der ...3
+El filosofo 4 se levanta de la mesa.
+Filosofo 4 PENSANDO
+El camarero recibe una peticion del filosofo 4
+Ten. 3 recibe petic. de 2
+El filosofo 2 coge el tenedor de su izquierda (3).
+Ten. 1 recibe petic. de 2
+El filosofo 2 coge el tenedor de su derecha (1).
+Filosofo 2 COMIENDO
+El camarero le da permiso al filosofo 4 para levantarse de la mesa
+El filosofo 0 se sienta a la mesa
+El camarero recibe una peticion del filosofo 4
+El filosofo 4 se sienta a la mesa
+Ten. 7 recibe liberac. de 6
+Filosofo 6 suelta tenedor izq ...7
+Filosofo 6 suelta tenedor der ...5
+El filosofo 6 se levanta de la mesa.
+Ten. 5 recibe liberac. de 6
+Ten. 5 recibe petic. de 4
+Ten. 7 recibe petic. de 8
+El filosofo 8 coge el tenedor de su derecha (7).
+Filosofo 8 COMIENDO
+El camarero le da permiso al filosofo 4 para levantarse de la mesa
+Filosofo 6 PENSANDO
+El filosofo 4 coge el tenedor de su izquierda (5).
+Filosofo 2 suelta tenedor izq ...3
+Filosofo 2 suelta tenedor der ...1
+Ten. 3 recibe liberac. de 2
+El filosofo 2 se levanta de la mesa.
+Filosofo 2 PENSANDO
+Ten. 1 recibe liberac. de 2
+El camarero recibe una peticion del filosofo 2
+Ten. 3 recibe petic. de 4
+El filosofo 4 coge el tenedor de su derecha (3).
+Filosofo 4 COMIENDO
+El camarero le da permiso al filosofo 2 para levantarse de la mesa
+El filosofo 6 se sienta a la mesa
+El camarero recibe una peticion del filosofo 2
+El filosofo 2 se sienta a la mesa
+Filosofo 8 suelta tenedor izq ...9
+Ten. 9 recibe liberac. de 8
+Ten. 9 recibe petic. de 0
+El filosofo 0 coge el tenedor de su derecha (9).
+Ten. 7 recibe liberac. de 8
+Filosofo 8 suelta tenedor der ...7
+El filosofo 8 se levanta de la mesa.
+Ten. 7 recibe petic. de 6
+El filosofo 0 coge el tenedor de su izquierda (1).
+Filosofo 0 COMIENDO
+Ten. 1 recibe petic. de 0
+El filosofo 6 coge el tenedor de su izquierda (7).
+El camarero le da permiso al filosofo 2 para levantarse de la mesa
+Filosofo 8 PENSANDO
+Ten. 5 recibe liberac. de 4
+Ten. 5 recibe petic. de 6
+Filosofo 4 suelta tenedor izq ...5
+El filosofo 6 coge el tenedor de su derecha (5).
+Filosofo 6 COMIENDO
+Filosofo 4 suelta tenedor der ...3
+El filosofo 4 se levanta de la mesa.
+Ten. 3 recibe liberac. de 4
+Ten. 3 recibe petic. de 2
+El filosofo 2 coge el tenedor de su izquierda (3).
+Filosofo 4 PENSANDO
+El camarero recibe una peticion del filosofo 4
+El camarero le da permiso al filosofo 4 para levantarse de la mesa
+El filosofo 8 se sienta a la mesa
+El camarero recibe una peticion del filosofo 4
+El filosofo 4 se sienta a la mesa
+Ten. 1 recibe liberac. de 0
+Ten. 1 recibe petic. de 2
+Filosofo 0 suelta tenedor izq ...1
+El filosofo 2 coge el tenedor de su derecha (1).
+Filosofo 2 COMIENDO
+Ten. 7 recibe liberac. de 6
+Filosofo 6 suelta tenedor izq ...7
+Filosofo 6 suelta tenedor der ...5
+El filosofo 6 se levanta de la mesa.
+Ten. 5 recibe liberac. de 6
+Ten. 5 recibe petic. de 4
+El filosofo 4 coge el tenedor de su izquierda (5).
+Filosofo 6 PENSANDO
+El camarero le da permiso al filosofo 4 para levantarse de la mesa
+Ten. 9 recibe liberac. de 0
+Filosofo 0 suelta tenedor der ...9
+El filosofo 0 se levanta de la mesa.
+Filosofo 0 PENSANDO
+El camarero recibe una peticion del filosofo 0
+El filosofo 8 coge el tenedor de su izquierda (9).
+Ten. 9 recibe petic. de 8
+Ten. 7 recibe petic. de 8
+El filosofo 8 coge el tenedor de su derecha (7).
+Filosofo 8 COMIENDO
+El filosofo 6 se sienta a la mesa
+El camarero le da permiso al filosofo 0 para levantarse de la mesa
+El camarero recibe una peticion del filosofo 0
+El filosofo 0 se sienta a la mesa
