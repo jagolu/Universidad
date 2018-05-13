@@ -1,0 +1,19 @@
+#!/bin/bash
+for ((N=1;N<=4;N=N*2))
+do
+	echo ' '
+	echo schedule-clause
+	echo ' '
+	echo ' '
+	./schedule-clause $N
+	echo ' '
+	echo scheduled-clause
+	echo ' '
+	echo ' '
+	./scheduled-clause 16 $N
+	echo ' '
+	echo scheduleg-clause
+	echo ' '
+	echo ' '
+	./scheduleg-clause 16 $N	
+done
