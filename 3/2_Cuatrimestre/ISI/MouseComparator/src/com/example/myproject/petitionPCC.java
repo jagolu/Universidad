@@ -3,7 +3,7 @@ package com.example.myproject;
 public class petitionPCC extends MouseComparatorServlet{
     public void checkPCC(String modelo, MouseComparator cb){
         String url=callURLPCC(modelo);
-        if(url!=null){
+        if(stringNotNullNotEmpty(url)){
             String urlProducto=getURLProductoPCC(url, modelo);
             cb.setUrlPCC(urlProducto);
             cb.setPrecioPCC(getPricePCC(urlProducto));

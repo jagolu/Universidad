@@ -65,7 +65,7 @@ public class MouseComparatorServlet extends HttpServlet {
     }
 
     protected boolean compararPeticiones(String posible2, String modelo2){
-        if(posible2.equals(null) || modelo2.equals(null)) return false;
+        if(!stringNotNullNotEmpty(posible2) || !stringNotNullNotEmpty(modelo2)) return false;
         String posible=posible2.toLowerCase();
         String modelo=modelo2.toLowerCase();
         String [] m=initializeStringArrayToVoid(50);
@@ -144,5 +144,10 @@ public class MouseComparatorServlet extends HttpServlet {
         } catch (NumberFormatException nfe){
             return false;
         }
+    }
+
+    protected boolean stringNotNullNotEmpty(String s){
+        if(s!=null && !s.isEmpty()) return true;
+        else false;
     }
 }

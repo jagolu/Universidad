@@ -3,7 +3,7 @@ package com.example.myproject;
 public class petitionBeep extends MouseComparatorServlet{
     public void checkBeep(String modelo, MouseComparator cb){
         String url=callURLBeep(modelo);
-        if(url!=null){
+        if(stringNotNullNotEmpty(url)){
             String urlProducto=getURLProductoBeep(modelo, url);
             cb.setUrlBeep(urlProducto);
             cb.setPrecioBeep(getPriceBeep(urlProducto));
