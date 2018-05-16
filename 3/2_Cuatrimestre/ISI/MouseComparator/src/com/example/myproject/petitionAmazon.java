@@ -53,17 +53,11 @@ public class petitionAmazon extends MouseComparatorServlet{
     }
     
     private String getURLProductoAmazon(org.w3c.dom.Document doc1){
-        String url=getElementValue(doc1,"ItemLink");
-        String urlFinal=addTillCharacter(url, "https:", url.indexOf("/"), 0, url.charAt(url.length()-1));
-        urlFinal+=url.charAt(url.length()-1);
-        return urlFinal;
+        return "https:"+addTillEnd(getElementValue(doc1,"ItemLink"), url.indexOf("/"));
     }
     
     private String getPriceAmazon(org.w3c.dom.Document doc1){
-        String precio=getElementValue(doc1,"ListPrice");
-        String precioFinal=addTillCharacter(precio, "", precio.indexOf("$"), 0, precio.charAt(precio.length()-1));
-        precioFinal+=precio.charAt(precio.length()-1);
-        return precioFinal;
+        return addTillEnd(getElementValue(doc1,"ListPrice"), precio.indexOf("$"));
     }
     
     private String getURLImagenAmazon(org.w3c.dom.Document doc1){
@@ -141,5 +135,11 @@ public class petitionAmazon extends MouseComparatorServlet{
     private boolean diferentThat_Mouse_Wireless_Dpi_Numeric(String palabra){
        if(!palabra.equals("mouse") && !palabra.equals("wireless") && !palabra.equals("dpi") && !isNumeric(palabra)) return true;
        else return false;
+    }
+
+    private String addTillEnd(String cadBase, int pos){
+    	String cadRet="";
+        for(int i=0;i<cadBase.length;i++) cadRet+=cadBase[i];
+        return cadRet;
     }
 }
