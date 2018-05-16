@@ -18,7 +18,7 @@ public class MouseComparatorServlet extends HttpServlet {
     petitionBeep beep=new petitionBeep();
     petitionAmazon amazon=new petitionAmazon();
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String modelo=req.getParameter("modelo");
+        String modelo=req.getParameter("modelo").toLowerCase();
         MouseComparator bc=new MouseComparator();
         bc.setModelo(modelo);
         if(modelo.length()>0 && modelo.contains(" ") && modelo.indexOf(" ")!=0){

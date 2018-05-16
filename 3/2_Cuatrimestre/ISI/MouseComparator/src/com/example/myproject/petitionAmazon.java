@@ -15,7 +15,6 @@ public class petitionAmazon extends MouseComparatorServlet{
     private static final String ENDPOINT="ecs.amazonaws.com";
     private static final String AMAZON_ASSOCIATE_TAG="****";
     public void checkAmazon(String modelo, MouseComparator bc){
-        modelo=modelo.toLowerCase();
         String [] palabras=initializeStringArrayToVoid(50);
         int numPalabras=countWords(modelo, palabras);
         translateColors(palabras, numPalabras);
