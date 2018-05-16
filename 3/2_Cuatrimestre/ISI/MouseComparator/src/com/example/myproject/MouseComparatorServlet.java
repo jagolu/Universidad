@@ -47,8 +47,7 @@ public class MouseComparatorServlet extends HttpServlet {
             URL url = new URL(url1);
             urlConn = url.openConnection();
             urlConn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-            if (urlConn != null)
-                urlConn.setReadTimeout(60 * 1000);
+            if (urlConn != null) urlConn.setReadTimeout(60 * 1000);
             if (urlConn != null && urlConn.getInputStream() != null) {
                 in = new InputStreamReader(urlConn.getInputStream(),Charset.defaultCharset());
                 BufferedReader bufferedReader = new BufferedReader(in);
@@ -60,7 +59,6 @@ public class MouseComparatorServlet extends HttpServlet {
             }
             in.close();
         } catch (Exception e) {
-            System.err.println(e);
             return null;
         } 
         return sb.toString();
@@ -73,12 +71,8 @@ public class MouseComparatorServlet extends HttpServlet {
         String [] m=initializeStringArrayToVoid(50); 
         int nm=1;
         for(int i=0;i<modelo.length();i++){
-            if(modelo.charAt(i)==' ' || modelo.charAt(i)==','){
-                nm++;
-            }
-            else{
-                m[nm-1]=m[nm-1]+modelo.charAt(i);
-            }
+            if(modelo.charAt(i)==' ' || modelo.charAt(i)==',')  nm++;
+            else m[nm-1]=m[nm-1]+modelo.charAt(i);
         }
         nm++;
         boolean vale=true;
@@ -92,18 +86,14 @@ public class MouseComparatorServlet extends HttpServlet {
     
     protected String [] initializeStringArrayToVoid(int tam){
         String [] s=new String [tam];
-        for(int i=0;i<tam;i++){
-            s[i]="";
-        }
+        for(int i=0;i<tam;i++) s[i]="";
         return s;
     }
     
     protected String addWordsToURL(String url, int numPalabras, String [] palabras, String symbol){
         for(int i=0;i<numPalabras;i++){
             url=url+palabras[i];
-            if(i!=(numPalabras-1)){
-                    url=url+symbol;
-            }
+            if(i!=(numPalabras-1)) url+=symbol;
         }
         return url;
     }
@@ -112,7 +102,7 @@ public class MouseComparatorServlet extends HttpServlet {
         int numPalabras=0;
         for(int i=0;i<modelo.length();i++){
                 if(modelo.charAt(i)==' ' || modelo.charAt(i)==',') numPalabras++;
-                else palabras[numPalabras]=palabras[numPalabras]+modelo.charAt(i);
+                else palabras[numPalabras]+=modelo.charAt(i);
         }
         numPalabras++;
         return numPalabras;

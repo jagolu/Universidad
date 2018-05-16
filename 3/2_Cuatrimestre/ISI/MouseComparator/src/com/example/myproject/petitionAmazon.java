@@ -69,17 +69,13 @@ public class petitionAmazon extends MouseComparatorServlet{
     private String getURLImagenAmazon(org.w3c.dom.Document doc1){
         NodeList nodelist = doc1.getElementsByTagName("URL");
         String asinCodes[]=new String[nodelist.getLength()];
-        for (int i=0; i<asinCodes.length; i++){
-            asinCodes[i] = nodelist.item(i).getTextContent();
-        }
+        for (int i=0; i<asinCodes.length; i++) asinCodes[i] = nodelist.item(i).getTextContent();
         int cont=0;
         String urlFinal=null;
         for(int i=0;i<asinCodes.length;i++){
             if(!asinCodes[i].contains("jpg")){
                 cont++;
-                if(cont==3){
-                    urlFinal=asinCodes[i];
-                }
+                if(cont==3) urlFinal=asinCodes[i];
             }
         }
         return urlFinal;
