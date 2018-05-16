@@ -82,28 +82,28 @@ public class petitionAmazon extends MouseComparatorServlet{
     }
     
     private org.w3c.dom.Document initializeDocument(String keywords){
-        SignedRequestsHelper helper1;
+        SignedRequestsHelper helper;
         try {
-            helper1 = SignedRequestsHelper.getInstance(ENDPOINT, AWS_ACCESS_KEY_ID, AWS_SECRET_KEY);
+            helper = SignedRequestsHelper.getInstance(ENDPOINT, AWS_ACCESS_KEY_ID, AWS_SECRET_KEY);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
-        String requestUrl1 = helper1.sign(loadParams(keywords));
+        String requestUrl = helper.sign(loadParams(keywords));
         DocumentBuilderFactory dbf =DocumentBuilderFactory.newInstance();
         DocumentBuilder db;
         org.w3c.dom.Document doc1=null;
         try{
             db = dbf.newDocumentBuilder();
             try {
-                    doc1 = db.parse(requestUrl1);
-            } catch (IOException e) {
+                    doc1 = db.parse(requestUrl);
+            } catch (IOException ioe) {
                     e.printStackTrace();
             }
-            catch (SAXException e) {
+            catch (SAXException saxe) {
                 return null;
             }
-        }catch(ParserConfigurationException e1){
+        }catch(ParserConfigurationException pce){
             return null;
         }
         return doc1;

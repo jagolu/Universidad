@@ -68,7 +68,7 @@ public class MouseComparatorServlet extends HttpServlet {
         if(posible2.equals(null) || modelo2.equals(null)) return false;
         String posible=posible2.toLowerCase();
         String modelo=modelo2.toLowerCase();
-        String [] m=initializeStringArrayToVoid(50); 
+        String [] m=initializeStringArrayToVoid(50);
         int nm=1;
         for(int i=0;i<modelo.length();i++){
             if(modelo.charAt(i)==' ' || modelo.charAt(i)==',')  nm++;
@@ -122,7 +122,7 @@ public class MouseComparatorServlet extends HttpServlet {
             Document doc=Jsoup.connect(url).get();
             Elements e=doc.getElementsByTag(tag);
             return e.toString();
-        }catch(IOException error){
+        }catch(IOException ioe){
             return null;
         }
     }
@@ -132,7 +132,7 @@ public class MouseComparatorServlet extends HttpServlet {
             Document doc=Jsoup.connect(url).get();
             Elements e=doc.select(whatsSelected);
             return e.toString();
-        }catch(IOException error){
+        }catch(IOException ioe){
             return null;
         }
     }
