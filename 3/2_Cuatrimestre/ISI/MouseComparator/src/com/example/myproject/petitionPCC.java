@@ -10,9 +10,9 @@ public class petitionPCC extends MouseComparatorServlet{
             cb.setUrlImagenPCC(getUrlImagenPCC(urlProducto));
         }
         else{
-                cb.setPrecioPCC("");
-                cb.setUrlPCC("");
-                cb.setUrlImagenPCC("");
+            cb.setPrecioPCC("");
+            cb.setUrlPCC("");
+            cb.setUrlImagenPCC("");
         }
     }
     

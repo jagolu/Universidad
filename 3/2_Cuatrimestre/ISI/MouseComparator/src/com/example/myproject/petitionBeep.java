@@ -4,15 +4,15 @@ public class petitionBeep extends MouseComparatorServlet{
     public void checkBeep(String modelo, MouseComparator cb){
         String url=callURLBeep(modelo);
         if(url!=null){
-                String urlProducto=getURLProductoBeep(modelo, url);
-                cb.setUrlBeep(urlProducto);
-                cb.setPrecioBeep(getPriceBeep(urlProducto));
-                cb.setUrlImagenBeep(getUrlImagenBeep(urlProducto));
+            String urlProducto=getURLProductoBeep(modelo, url);
+            cb.setUrlBeep(urlProducto);
+            cb.setPrecioBeep(getPriceBeep(urlProducto));
+            cb.setUrlImagenBeep(getUrlImagenBeep(urlProducto));
         }
         else{
-                cb.setPrecioBeep("");
-                cb.setUrlImagenBeep("");
-                cb.setUrlBeep("");
+            cb.setPrecioBeep("");
+            cb.setUrlImagenBeep("");
+            cb.setUrlBeep("");
         }
     }
     
