@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlType;
 		"precio"
 })
 
-
 public class MouseComparator implements Serializable{
 	private String modelo="";
 	private String urlImagenPCComponentes="";
