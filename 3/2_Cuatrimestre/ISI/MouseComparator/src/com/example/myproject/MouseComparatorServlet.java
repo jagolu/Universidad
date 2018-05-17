@@ -66,20 +66,20 @@ public class MouseComparatorServlet extends HttpServlet {
 
     protected boolean compararPeticiones(String posible, String modelo){
         if(!stringNotNullNotEmpty(posible) || !stringNotNullNotEmpty(modelo)) return false;
-        String [] palabras={posible, modelo};
-        translateWords(palabras, 2);
-        posible=palabras[0];
-        modelo=palabras[1];
-        String [] m=initializeStringArrayToVoid(50);
-        int nm=1;
+        String [] wordsToTraduce={posible, modelo};
+        translateWords(wordsToTraduce, 2);
+        posible=wordsToTraduce[0];
+        modelo=wordsToTraduce[1];
+        String [] palabras=initializeStringArrayToVoid(50);
+        int numPalabras=1;
         for(int i=0;i<modelo.length();i++){
-            if(modelo.charAt(i)==' ' || modelo.charAt(i)==',')  nm++;
-            else m[nm-1]=m[nm-1]+modelo.charAt(i);
+            if(modelo.charAt(i)==' ' || modelo.charAt(i)==',')  numPalabras++;
+            else palabras[numPalabras-1]=palabras[numPalabras-1]+modelo.charAt(i);
         }
-        nm++;
-        for(int i=0;i<nm;i++){
-            if(!m[i].equals("mouse") && !m[i].equals("wireless") && !m[i].equals("cable")){
-                if(!posible.contains(m[i])) return true;
+        numPalabras++;
+        for(int i=0;i<numPalabras;i++){
+            if(!palabras[i].equals("mouse") && !palabras[i].equals("wireless") && !palabras[i].equals("cable")){
+                if(!posible.contains(palabras[i])) return true;
             }
         }
         return false;
