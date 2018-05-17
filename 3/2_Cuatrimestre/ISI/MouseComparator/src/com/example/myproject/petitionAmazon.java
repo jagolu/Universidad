@@ -17,7 +17,7 @@ public class petitionAmazon extends MouseComparatorServlet{
     public void checkAmazon(String modelo, MouseComparator bc){
         String [] palabras=initializeStringArrayToVoid(50);
         int numPalabras=countWords(modelo, palabras);
-        translateColors(palabras, numPalabras);
+        translateWords(palabras, numPalabras);
         org.w3c.dom.Document doc1=initializeDocument(getKeywords(numPalabras, palabras));
         if(doc1!=null){
             bc.setUrlAmazon(getURLProductoAmazon(doc1));
@@ -28,22 +28,6 @@ public class petitionAmazon extends MouseComparatorServlet{
             bc.setUrlAmazon("");
             bc.setUrlImagenAmazon("");
             bc.setPrecioAmazon("");
-        }
-    }
-    
-    private void translateColors(String [] palabras, int numPalabras){
-        for(int i=0;i<numPalabras;i++){
-            if(palabras[i].equals("azul")) palabras[i]="blue";
-            else if(palabras[i].equals("dorado")) palabras[i]="golden";
-            else if(palabras[i].equals("amarillo")) palabras[i]="yellow";
-            else if(palabras[i].equals("púrpura")) palabras[i]="purple";
-            else if(palabras[i].equals("rosa")) palabras[i]="pink";
-            else if(palabras[i].equals("verde")) palabras[i]="green";
-            else if(palabras[i].equals("rojo")) palabras[i]="red";
-            else if(palabras[i].equals("negro")) palabras[i]="black";
-            else if(palabras[i].equals("gris")) palabras[i]="gray";
-            else if(palabras[i].equals("ratón") || palabras[i].equals("raton")) palabras[i]="mouse";
-            else if(palabras[i].equals("inalambrico") || palabras[i].equals("inalámbrico")) palabras[i]="wireless";
         }
     }
     

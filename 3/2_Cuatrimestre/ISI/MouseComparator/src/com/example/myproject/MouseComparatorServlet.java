@@ -66,8 +66,8 @@ public class MouseComparatorServlet extends HttpServlet {
 
     protected boolean compararPeticiones(String posible2, String modelo2){
         if(!stringNotNullNotEmpty(posible2) || !stringNotNullNotEmpty(modelo2)) return false;
-        String posible=posible2.toLowerCase();
-        String modelo=modelo2.toLowerCase();
+        translateWords(posible2, 50);
+        translateWords(modelo2, 50);
         String [] m=initializeStringArrayToVoid(50);
         boolean vale=true;
         int nm=1;
@@ -77,7 +77,7 @@ public class MouseComparatorServlet extends HttpServlet {
         }
         nm++;
         for(int i=0;i<nm;i++){
-            if(!m[i].equals("mouse") && !m[i].equals("raton") && !m[i].equals("ratón") && !m[i].equals("wireless") && !m[i].equals("inalambrico") && !m[i].equals("inalámbrico") && !m[i].equals("con cable")){
+            if(!m[i].equals("mouse") && !m[i].equals("wireless") && !m[i].equals("cable")){
                 if(!posible.contains(m[i])) vale=false;
             }
         }
@@ -149,5 +149,21 @@ public class MouseComparatorServlet extends HttpServlet {
     protected boolean stringNotNullNotEmpty(String s){
         if(s!=null && !s.isEmpty()) return true;
         else false;
+    }
+
+    protected void translateWords(String [] palabras, int numPalabras){
+        for(int i=0;i<numPalabras;i++){
+            if(palabras[i].equals("azul")) palabras[i]="blue";
+            else if(palabras[i].equals("dorado")) palabras[i]="golden";
+            else if(palabras[i].equals("amarillo")) palabras[i]="yellow";
+            else if(palabras[i].equals("púrpura")) palabras[i]="purple";
+            else if(palabras[i].equals("rosa")) palabras[i]="pink";
+            else if(palabras[i].equals("verde")) palabras[i]="green";
+            else if(palabras[i].equals("rojo")) palabras[i]="red";
+            else if(palabras[i].equals("negro")) palabras[i]="black";
+            else if(palabras[i].equals("gris")) palabras[i]="gray";
+            else if(palabras[i].equals("ratón") || palabras[i].equals("raton")) palabras[i]="mouse";
+            else if(palabras[i].equals("inalambrico") || palabras[i].equals("inalámbrico")) palabras[i]="wireless";
+        }
     }
 }
