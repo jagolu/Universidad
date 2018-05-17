@@ -69,15 +69,15 @@ public class MouseComparatorServlet extends HttpServlet {
         String posible=posible2.toLowerCase();
         String modelo=modelo2.toLowerCase();
         String [] m=initializeStringArrayToVoid(50);
+        boolean vale=true;
         int nm=1;
         for(int i=0;i<modelo.length();i++){
             if(modelo.charAt(i)==' ' || modelo.charAt(i)==',')  nm++;
             else m[nm-1]=m[nm-1]+modelo.charAt(i);
         }
         nm++;
-        boolean vale=true;
         for(int i=0;i<nm;i++){
-            if(!m[i].equals("Mouse") && !m[i].equals("mouse") && !m[i].equals("MOUSE") && !m[i].equals("Raton") && !m[i].equals("raton") && !m[i].equals("RATON")  && !m[i].equals("Ratón") && !m[i].equals("ratón") && !m[i].equals("RATÓN") && !m[i].equals("Wireless") && !m[i].equals("wireless") && !m[i].equals("WIRELESS") && !m[i].equals("Inalambrico") && !m[i].equals("inalambrico") && !m[i].equals("INALAMBRICO")  && !m[i].equals("Inalámbrico") && !m[i].equals("inalámbrico") && !m[i].equals("INALÁMBRICO") && !m[i].equals("Con cable") && !m[i].equals("con cable") && !m[i].equals("CON CABLE")  && !m[i].equals("con Cable") && !m[i].equals("Con Cable")){
+            if(!m[i].equals("mouse") && !m[i].equals("raton") && !m[i].equals("ratón") && !m[i].equals("wireless") && !m[i].equals("inalambrico") && !m[i].equals("inalámbrico") && !m[i].equals("con cable")){
                 if(!posible.contains(m[i])) vale=false;
             }
         }
