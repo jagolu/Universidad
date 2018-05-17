@@ -64,12 +64,13 @@ public class MouseComparatorServlet extends HttpServlet {
         return sb.toString();
     }
 
-    protected boolean compararPeticiones(String posible2, String modelo2){
-        if(!stringNotNullNotEmpty(posible2) || !stringNotNullNotEmpty(modelo2)) return false;
-        translateWords(posible2, 50);
-        translateWords(modelo2, 50);
+    protected boolean compararPeticiones(String posible, String modelo){
+        if(!stringNotNullNotEmpty(posible) || !stringNotNullNotEmpty(modelo)) return false;
+        String [] palabras={posible, modelo};
+        translateWords(palabras, 2);
+        posible=palabras[0];
+        modelo=palabras[1];
         String [] m=initializeStringArrayToVoid(50);
-        boolean vale=true;
         int nm=1;
         for(int i=0;i<modelo.length();i++){
             if(modelo.charAt(i)==' ' || modelo.charAt(i)==',')  nm++;
@@ -78,10 +79,10 @@ public class MouseComparatorServlet extends HttpServlet {
         nm++;
         for(int i=0;i<nm;i++){
             if(!m[i].equals("mouse") && !m[i].equals("wireless") && !m[i].equals("cable")){
-                if(!posible.contains(m[i])) vale=false;
+                if(!posible.contains(m[i])) return true;
             }
         }
-        return vale;
+        return false;
     }
     
     protected String [] initializeStringArrayToVoid(int tam){
