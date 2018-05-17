@@ -19,7 +19,7 @@
  *
  */
 
-package com.example.myproject;
+package mouseComparator;
 
 import java.io.UnsupportedEncodingException;
 

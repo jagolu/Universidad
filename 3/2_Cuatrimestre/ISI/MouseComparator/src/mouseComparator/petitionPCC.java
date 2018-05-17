@@ -1,4 +1,4 @@
-package com.example.myproject;
+package mouseComparator;
 
 public class petitionPCC extends MouseComparatorServlet{
     public void checkPCC(String modelo, MouseComparator cb){

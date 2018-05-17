@@ -13,7 +13,7 @@
     <description>Sample Servlet</description>
     <display-name>MouseComparatorServlet</display-name>
     <servlet-name>MouseComparatorServlet</servlet-name>
-    <servlet-class>com.example.myproject.MouseComparatorServlet</servlet-class>
+    <servlet-class>mouseComparator.MouseComparatorServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>MouseComparatorServlet</servlet-name>

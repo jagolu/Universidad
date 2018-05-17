@@ -1,4 +1,4 @@
-package com.example.myproject;
+package mouseComparator;
 
 public class petitionBeep extends MouseComparatorServlet{
     public void checkBeep(String modelo, MouseComparator cb){

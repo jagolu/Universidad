@@ -1,4 +1,4 @@
-package com.example.myproject;
+package mouseComparator;
 
 import java.io.Serializable;
 import javax.xml.bind.annotation.XmlElement;
