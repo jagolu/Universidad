@@ -151,6 +151,6 @@ function comprobarComentario(){
 }
 
 function cargarHistorias(usuario){
-	window.open("http://bahia.ugr.es/~pw_77148079/redsocialII/titulosHistorias.php?user="+usuario, "Historias de "+usuario, "width=300, height=200");
+	window.open("http://bahia.ugr.es/~/redsocialII/titulosHistorias.php?user="+usuario, "Historias de "+usuario, "width=300, height=200");
 }
 
